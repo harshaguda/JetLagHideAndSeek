@@ -52,7 +52,7 @@ const tutorialSteps: TutorialStep[] = [
                 this guide covers advanced features you might not know about. To
                 support this free tool, please consider{" "}
                 <a
-                    href="https://github.com/taibeled/JetLagHideAndSeek"
+                    href="https://github.com/harshaguda/JetLagHideAndSeek"
                     className="text-blue-500 cursor-pointer"
                     target="_blank"
                     rel="noreferrer"
@@ -774,7 +774,7 @@ const tutorialSteps: TutorialStep[] = [
                 <strong>Need Help?</strong> This tutorial is always available
                 via the Tutorial button. Feel free to{" "}
                 <a
-                    href="https://github.com/taibeled/JetLagHideAndSeek/issues"
+                    href="https://github.com/harshaguda/JetLagHideAndSeek/issues"
                     className="text-blue-500 cursor-pointer"
                     target="_blank"
                     rel="noreferrer"
@@ -787,7 +787,7 @@ const tutorialSteps: TutorialStep[] = [
                 <strong>Support the Project:</strong> If this tool enhances your
                 Jet Lag games, please consider{" "}
                 <a
-                    href="https://github.com/taibeled/JetLagHideAndSeek"
+                    href="https://github.com/harshaguda/JetLagHideAndSeek"
                     className="text-blue-500 cursor-pointer"
                     target="_blank"
                     rel="noreferrer"
