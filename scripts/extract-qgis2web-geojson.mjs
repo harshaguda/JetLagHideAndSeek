@@ -3,7 +3,9 @@ import path from "node:path";
 
 const repoRoot = process.cwd();
 const layersDir = path.join(repoRoot, "src", "qgis2web", "layers");
+const stylesDir = path.join(repoRoot, "src", "qgis2web", "styles");
 const outDir = path.join(repoRoot, "public", "qgis2web", "geojson");
+const outStyleIndexPath = path.join(repoRoot, "public", "qgis2web", "style-index.json");
 
 const LAYERS_TO_SKIP = new Set(["layers.js"]);
 
@@ -58,6 +60,21 @@ function extractFirstJsonObject(text) {
     throw new Error("Unbalanced braces while extracting JSON");
 }
 
+function extractStrokeStyleFromQgis2webStyleJs(styleJs) {
+    // Typical qgis2web output contains:
+    // stroke: new ol.style.Stroke({color: 'rgba(158,70,156,1.0)', ..., width: 4.56})
+    const colorMatch = styleJs.match(
+        /Stroke\(\{[^}]*?color:\s*['"]([^'"]+)['"][^}]*?\}\)/s,
+    );
+    const widthMatch = styleJs.match(/width:\s*([0-9]*\.?[0-9]+)/);
+
+    const color = colorMatch?.[1];
+    const weight = widthMatch ? Number.parseFloat(widthMatch[1]) : undefined;
+
+    if (!color && !weight) return null;
+    return { color, weight };
+}
+
 async function main() {
     await fs.mkdir(outDir, { recursive: true });
 
@@ -72,6 +89,7 @@ async function main() {
     }
 
     let written = 0;
+    const styleIndex = {};
 
     for (const fileName of layerFiles) {
         const fullPath = path.join(layersDir, fileName);
@@ -84,9 +102,33 @@ async function main() {
         const outPath = path.join(outDir, outName);
         await fs.writeFile(outPath, JSON.stringify(geojson), "utf8");
         written++;
+
+        const layerName = fileName.replace(/\.js$/, "");
+        const stylePath = path.join(stylesDir, `${layerName}_style.js`);
+        try {
+            const styleJs = await fs.readFile(stylePath, "utf8");
+            const stroke = extractStrokeStyleFromQgis2webStyleJs(styleJs);
+            if (stroke) {
+                styleIndex[layerName] = stroke;
+            }
+        } catch {
+            // Style file may not exist for every layer; ignore.
+        }
     }
 
-    console.log(`Extracted ${written} GeoJSON file(s) to ${path.relative(repoRoot, outDir)}`);
+    await fs.mkdir(path.dirname(outStyleIndexPath), { recursive: true });
+    await fs.writeFile(
+        outStyleIndexPath,
+        JSON.stringify(styleIndex, null, 2),
+        "utf8",
+    );
+
+    console.log(
+        `Extracted ${written} GeoJSON file(s) to ${path.relative(repoRoot, outDir)}`,
+    );
+    console.log(
+        `Wrote qgis2web style index to ${path.relative(repoRoot, outStyleIndexPath)}`,
+    );
 }
 
 main().catch((err) => {

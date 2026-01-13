@@ -240,6 +240,20 @@ export const Map = ({ className }: { className?: string }) => {
                 )
                     ? (import.meta.env.BASE_URL || "/")
                     : `${import.meta.env.BASE_URL}/`;
+                let styleIndex: Record<
+                    string,
+                    { color?: string; weight?: number }
+                > = {};
+                try {
+                    const styleRes = await fetch(
+                        `${assetBase}qgis2web/style-index.json`,
+                    );
+                    if (styleRes.ok) {
+                        styleIndex = await styleRes.json();
+                    }
+                } catch {
+                    // Ignore missing style index; fall back to feature properties.
+                }
                 const layerNames = [
                     "L1_1",
                     "L2_2",
@@ -264,21 +278,34 @@ export const Map = ({ className }: { className?: string }) => {
                         if (!res.ok) continue;
                         const geojson = await res.json();
 
+                        const getFeatureColor = (feature: any) => {
+                            const props = feature?.properties;
+                            const raw =
+                                props?.colour ??
+                                props?.color ??
+                                props?.stroke ??
+                                props?.strokeColor ??
+                                styleIndex?.[name]?.color;
+                            return raw || "#22c55e";
+                        };
+
+                        const getFeatureWeight = (_feature: any) => {
+                            return styleIndex?.[name]?.weight ?? 3;
+                        };
+
                         const layer = L.geoJSON(geojson, {
                             style: (feature: any) => {
-                                const color =
-                                    feature?.properties?.colour || "#22c55e";
                                 return {
-                                    color,
-                                    weight: 3,
+                                    color: getFeatureColor(feature),
+                                    weight: getFeatureWeight(feature),
                                     opacity: 0.9,
                                 } as any;
                             },
                             pointToLayer: (_feature, latlng) =>
                                 L.circleMarker(latlng, {
                                     radius: 4,
-                                    color: "#22c55e",
-                                    fillColor: "#22c55e",
+                                    color: getFeatureColor(_feature),
+                                    fillColor: getFeatureColor(_feature),
                                     fillOpacity: 0.9,
                                     weight: 1,
                                 }),
