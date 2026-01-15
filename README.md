@@ -1,5 +1,9 @@
 # Jet Lag The Game: Hide and Seek Map Generator
 
+Some Issues which need to be fixed before the game day
+    -[] OSM Level 8 API call is not functioning (issue with OSM API, maybe load an already downloaded map)
+    -[] Add OSM Level 8 and 9 boundaries
+
 A tool to trivially generate interactive maps for viewing hiding possibilities in Jet Lag The Game's Hide and Seek. So far, the following questions have been implemented (see https://github.com/taibeled/JetLagHideAndSeek/issues/9 for more):
 
 - Radius
