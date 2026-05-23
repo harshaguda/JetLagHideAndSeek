@@ -234,7 +234,9 @@ out ${outType};
             .get()
             .filter((entry) => entry.added)
             .map((entry) => entry.location);
-        const allLocations = [primaryLocation, ...additionalLocations];
+        const allLocations = [primaryLocation, ...additionalLocations].filter(
+            (loc) => loc && loc.properties
+        );
         const relationToAreaBlocks = allLocations
             .map((loc, idx) => {
                 const regionVar = `.region${idx}`;
@@ -360,7 +362,9 @@ export const determineMapBoundaries = async () => {
                 base: true,
             },
             ...additionalMapGeoLocations.get(),
-        ].map(async (location) => ({
+        ]
+            .filter((x) => x && x.location && x.location.properties)
+            .map(async (location) => ({
             added: location.added,
             data: await determineGeoJSON(
                 location.location.properties.osm_id.toString(),

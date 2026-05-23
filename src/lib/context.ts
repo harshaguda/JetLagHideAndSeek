@@ -45,10 +45,92 @@ export const mapGeoLocation = persistentAtom<OpenStreetMap>(
 
 export const additionalMapGeoLocations = persistentAtom<
     AdditionalMapGeoLocations[]
->("additionalMapGeoLocations", [], {
-    encode: JSON.stringify,
-    decode: JSON.parse,
-});
+>(
+    "additionalMapGeoLocations",
+    [
+        {
+            added: true,
+            base: false,
+            location: {
+                geometry: {
+                    coordinates: [60.2055, 24.6559], // Espoo coordinates
+                    type: "Point",
+                },
+                type: "Feature",
+                properties: {
+                    osm_type: "R",
+                    osm_id: 36097,
+                    extent: [60.354, 24.536, 60.100, 24.845],
+                    country: "Finland",
+                    osm_key: "place",
+                    countrycode: "FI",
+                    osm_value: "city",
+                    state: "Uusimaa",
+                    name: "Espoo",
+                    type: "city",
+                },
+            },
+        },
+        {
+            added: true,
+            base: false,
+            location: {
+                geometry: {
+                    coordinates: [60.2934, 25.0378], // Vantaa coordinates
+                    type: "Point",
+                },
+                type: "Feature",
+                properties: {
+                    osm_type: "R",
+                    osm_id: 34920,
+                    extent: [60.366, 24.747, 60.233, 25.158],
+                    country: "Finland",
+                    osm_key: "place",
+                    countrycode: "FI",
+                    osm_value: "city",
+                    state: "Uusimaa",
+                    name: "Vantaa",
+                    type: "city",
+                },
+            },
+        },
+        {
+            added: true,
+            base: false,
+            location: {
+                geometry: {
+                    coordinates: [60.2111209, 24.7293466], // Kauniainen coordinates
+                    type: "Point",
+                },
+                type: "Feature",
+                properties: {
+                    osm_type: "R",
+                    osm_id: 37224,
+                    extent: [60.225918, 24.6752776, 60.2025488, 24.7509167],
+                    country: "Finland",
+                    osm_key: "place",
+                    countrycode: "FI",
+                    osm_value: "city",
+                    state: "Uusimaa",
+                    name: "Kauniainen",
+                    type: "city",
+                },
+            },
+        }
+
+    ],
+    {
+        encode: JSON.stringify,
+        decode: (val) => {
+            const parsed = JSON.parse(val);
+            if (!Array.isArray(parsed)) return [];
+            return parsed.map((item: any) => {
+                if (item && item.location) return item;
+                return { added: true, base: false, location: item };
+            });
+        },
+    }
+);
 
 export const mapGeoJSON = atom<FeatureCollection<
     Polygon | MultiPolygon
@@ -89,9 +171,9 @@ export const highlightTrainLines = persistentAtom<boolean>(
 export const hiderMode = persistentAtom<
     | false
     | {
-          latitude: number;
-          longitude: number;
-      }
+        latitude: number;
+        longitude: number;
+    }
 >("isHiderMode", false, {
     encode: JSON.stringify,
     decode: JSON.parse,
@@ -229,7 +311,7 @@ export const saveCustomPreset = (
 ) => {
     const id =
         typeof crypto !== "undefined" &&
-        typeof (crypto as any).randomUUID === "function"
+            typeof (crypto as any).randomUUID === "function"
             ? (crypto as any).randomUUID()
             : String(Date.now());
     const p: CustomPreset = {

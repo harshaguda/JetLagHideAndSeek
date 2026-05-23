@@ -133,7 +133,9 @@ export const PlacePicker = ({
                     {[
                         { location: $mapGeoLocation, added: true, base: true },
                         ...$additionalMapGeoLocations,
-                    ].map((location, index) => (
+                    ]
+                        .filter((loc) => loc && loc.location)
+                        .map((location, index) => (
                         <div
                             className={cn(
                                 "flex justify-between items-center px-3 py-2",

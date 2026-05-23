@@ -181,18 +181,25 @@ export const Map = ({ className }: { className?: string }) => {
                 mapGeoData = polyGeoData;
                 mapGeoJSON.set(polyGeoData);
             } else {
-                await toast.promise(
-                    determineMapBoundaries()
-                        .then((x) => {
+                try {
+                    await toast.promise(
+                        determineMapBoundaries().then((x) => {
                             mapGeoJSON.set(x);
                             mapGeoData = x;
-                        })
-                        .catch((error) => console.log(error)),
-                    {
-                        error: "Error refreshing map data",
-                    },
-                );
+                        }),
+                        {
+                            error: "Error refreshing map data",
+                        },
+                    );
+                } catch (error) {
+                    console.log(error);
+                }
             }
+        }
+
+        if (!mapGeoData) {
+            isLoading.set(false);
+            return;
         }
 
         if ($hiderMode !== false) {

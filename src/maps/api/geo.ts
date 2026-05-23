@@ -47,7 +47,8 @@ export const prettifyLocation = (
     }
 };
 
-export const determineName = (feature: OpenStreetMap) => {
+export const determineName = (feature?: OpenStreetMap | null) => {
+    if (!feature || !feature.properties) return "Unknown";
     const props = feature.properties;
     if (props.osm_type === "R") {
         const parts = [props.name, props.state, props.country].filter(Boolean);
