@@ -118,7 +118,7 @@ export const trainStations = atom<any[]>([]);
 
 export const showQgis2webLayers = persistentAtom<boolean>(
     "showQgis2webLayers",
-    false,
+    true,
     {
         encode: JSON.stringify,
         decode: JSON.parse,
