@@ -82,5 +82,12 @@
     },
     "engines": {
         "node": "<25"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "@vaadin/vaadin-usage-statistics",
+            "esbuild",
+            "sharp"
+        ]
     }
 }
