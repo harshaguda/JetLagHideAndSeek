@@ -2,10 +2,27 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const repoRoot = process.cwd();
-const layersDir = path.join(repoRoot, "src", "qgis2web", "layers");
-const stylesDir = path.join(repoRoot, "src", "qgis2web", "styles");
-const outDir = path.join(repoRoot, "public", "qgis2web", "geojson");
-const outStyleIndexPath = path.join(repoRoot, "public", "qgis2web", "style-index.json");
+
+const getArgValue = (flag) => {
+    const idx = process.argv.indexOf(flag);
+    if (idx === -1) return undefined;
+    return process.argv[idx + 1];
+};
+
+const srcArg = getArgValue("--src") ?? getArgValue("--source");
+const outArg = getArgValue("--out");
+
+const sourceDir = srcArg
+    ? path.resolve(repoRoot, srcArg)
+    : path.join(repoRoot, "src", "qgis2web");
+const outputBaseDir = outArg
+    ? path.resolve(repoRoot, outArg)
+    : path.join(repoRoot, "public", "qgis2web");
+
+const layersDir = path.join(sourceDir, "layers");
+const stylesDir = path.join(sourceDir, "styles");
+const outDir = path.join(outputBaseDir, "geojson");
+const outStyleIndexPath = path.join(outputBaseDir, "style-index.json");
 
 const LAYERS_TO_SKIP = new Set(["layers.js"]);
 

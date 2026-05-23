@@ -23,6 +23,7 @@ import {
     mapGeoLocation,
     planningModeEnabled,
     polyGeoJSON,
+    qgis2webDataset,
     questionFinishedMapData,
     questions,
     showQgis2webLayers,
@@ -40,6 +41,92 @@ import { LeafletFullScreenButton } from "./LeafletFullScreenButton";
 import { MapPrint } from "./MapPrint";
 import { PolygonDraw } from "./PolygonDraw";
 
+const QGIS2WEB_DATASETS = {
+    barcelona: {
+        basePath: "qgis2web",
+        layerNames: [
+            "L1_1",
+            "L2_2",
+            "L3_3",
+            "L4_4",
+            "L5_5",
+            "L6_6",
+            "L7_7",
+            "L8_8",
+            "L9_9",
+            "L10_10",
+            "L11_11",
+            "L12_12",
+            "StationNames_13",
+        ],
+    },
+    helsinki: {
+        basePath: "qgis2web/helsinki",
+        layerNames: [
+            "HSLn_linjat_6141148688638820305_1",
+            "HSLn_pyskit_linjoittain_1798901185460906372_2",
+            "query_3",
+        ],
+    },
+} as const;
+
+type Qgis2webStyle = {
+    color?: string;
+    weight?: number;
+    fillColor?: string;
+    fillOpacity?: number;
+    opacity?: number;
+    radius?: number;
+};
+
+const resolveQgis2webStyle = (
+    datasetKey: keyof typeof QGIS2WEB_DATASETS,
+    layerName: string,
+    feature: any,
+    styleIndex: Record<string, { color?: string; weight?: number }>,
+): Qgis2webStyle | null => {
+    const props = feature?.properties ?? {};
+
+    if (datasetKey === "helsinki") {
+        if (layerName === "HSLn_linjat_6141148688638820305_1") {
+            if (props.vehicle_ty === "109") {
+                return { color: "rgba(140,71,153,1.0)", weight: 3.04 };
+            }
+            if (props.vehicle_ty === "1") {
+                return { color: "rgba(255,99,25,1.0)", weight: 3.04 };
+            }
+            if (props.route_shor === "15") {
+                return { color: "rgba(0,126,121,1.0)", weight: 3.04 };
+            }
+            return null;
+        }
+
+        if (layerName === "HSLn_pyskit_linjoittain_1798901185460906372_2") {
+            return {
+                color: "rgba(35,35,35,1.0)",
+                fillColor: "rgba(114,155,111,1.0)",
+                weight: 0,
+                radius: 2.8,
+            };
+        }
+
+        if (layerName === "query_3") {
+            return null;
+        }
+    }
+
+    const raw =
+        props?.colour ??
+        props?.color ??
+        props?.stroke ??
+        props?.strokeColor ??
+        styleIndex?.[layerName]?.color;
+    return {
+        color: raw || "#22c55e",
+        weight: styleIndex?.[layerName]?.weight ?? 3,
+    };
+};
+
 export const Map = ({ className }: { className?: string }) => {
     useStore(additionalMapGeoLocations);
     const $mapGeoLocation = useStore(mapGeoLocation);
@@ -50,6 +137,7 @@ export const Map = ({ className }: { className?: string }) => {
     const $isLoading = useStore(isLoading);
     const $followMe = useStore(followMe);
     const $showQgis2webLayers = useStore(showQgis2webLayers);
+    const $qgis2webDataset = useStore(qgis2webDataset);
     const map = useStore(leafletMapContext);
 
     const followMeMarkerRef = useMemo(
@@ -240,13 +328,16 @@ export const Map = ({ className }: { className?: string }) => {
                 )
                     ? (import.meta.env.BASE_URL || "/")
                     : `${import.meta.env.BASE_URL}/`;
+                const dataset =
+                    QGIS2WEB_DATASETS[$qgis2webDataset] ??
+                    QGIS2WEB_DATASETS.barcelona;
                 let styleIndex: Record<
                     string,
                     { color?: string; weight?: number }
                 > = {};
                 try {
                     const styleRes = await fetch(
-                        `${assetBase}qgis2web/style-index.json`,
+                        `${assetBase}${dataset.basePath}/style-index.json`,
                     );
                     if (styleRes.ok) {
                         styleIndex = await styleRes.json();
@@ -254,61 +345,51 @@ export const Map = ({ className }: { className?: string }) => {
                 } catch {
                     // Ignore missing style index; fall back to feature properties.
                 }
-                const layerNames = [
-                    "L1_1",
-                    "L2_2",
-                    "L3_3",
-                    "L4_4",
-                    "L5_5",
-                    "L6_6",
-                    "L7_7",
-                    "L8_8",
-                    "L9_9",
-                    "L10_10",
-                    "L11_11",
-                    "L12_12",
-                    "StationNames_13",
-                ];
+                const layerNames = dataset.layerNames;
 
                 for (const name of layerNames) {
                     try {
                         const res = await fetch(
-                            `${assetBase}qgis2web/geojson/${name}.geojson`,
+                            `${assetBase}${dataset.basePath}/geojson/${name}.geojson`,
                         );
                         if (!res.ok) continue;
                         const geojson = await res.json();
 
-                        const getFeatureColor = (feature: any) => {
-                            const props = feature?.properties;
-                            const raw =
-                                props?.colour ??
-                                props?.color ??
-                                props?.stroke ??
-                                props?.strokeColor ??
-                                styleIndex?.[name]?.color;
-                            return raw || "#22c55e";
-                        };
-
-                        const getFeatureWeight = (_feature: any) => {
-                            return styleIndex?.[name]?.weight ?? 3;
-                        };
+                        const resolveStyle = (feature: any) =>
+                            resolveQgis2webStyle(
+                                $qgis2webDataset,
+                                name,
+                                feature,
+                                styleIndex,
+                            );
 
                         const layer = L.geoJSON(geojson, {
+                            filter: (feature: any) =>
+                                resolveStyle(feature) !== null,
                             style: (feature: any) => {
+                                const style = resolveStyle(feature);
+                                if (!style) {
+                                    return { opacity: 0, weight: 0 } as any;
+                                }
                                 return {
-                                    color: getFeatureColor(feature),
-                                    weight: getFeatureWeight(feature),
-                                    opacity: 0.9,
+                                    color: style.color,
+                                    weight: style.weight ?? 3,
+                                    opacity: style.opacity ?? 0.9,
                                 } as any;
                             },
-                            pointToLayer: (_feature, latlng) =>
-                                L.circleMarker(latlng, {
-                                    radius: 4,
-                                    color: getFeatureColor(_feature),
-                                    fillColor: getFeatureColor(_feature),
-                                    fillOpacity: 0.9,
-                                    weight: 1,
-                                }),
+                            pointToLayer: (feature, latlng) => {
+                                const style = resolveStyle(feature) || {};
+                                return L.circleMarker(latlng, {
+                                    radius: style.radius ?? 4,
+                                    color: style.color ?? "#22c55e",
+                                    fillColor:
+                                        style.fillColor ??
+                                        style.color ??
+                                        "#22c55e",
+                                    fillOpacity: style.fillOpacity ?? 0.9,
+                                    weight: style.weight ?? 1,
+                                });
+                            },
                             onEachFeature: (feature: any, l) => {
                                 const nameValue =
                                     feature?.properties?.["name:en"] ||
@@ -514,7 +595,7 @@ export const Map = ({ className }: { className?: string }) => {
         if (!map) return;
 
         refreshQuestions(true);
-    }, [$questions, map, $hiderMode]);
+    }, [$questions, map, $hiderMode, $showQgis2webLayers, $qgis2webDataset]);
 
     useEffect(() => {
         const intervalId = setInterval(async () => {

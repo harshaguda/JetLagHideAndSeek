@@ -34,6 +34,7 @@ import {
     pastebinApiKey,
     planningModeEnabled,
     polyGeoJSON,
+    qgis2webDataset,
     questions,
     save,
     showTutorial,
@@ -86,6 +87,7 @@ export const OptionDrawers = ({ className }: { className?: string }) => {
     const $alwaysUsePastebin = useStore(alwaysUsePastebin);
     const $followMe = useStore(followMe);
     const $customInitPref = useStore(customInitPreference);
+    const $qgis2webDataset = useStore(qgis2webDataset);
     const lastDefaultUnit = useRef($defaultUnit);
     const hasSyncedInitialUnit = useRef(false);
     const [isOptionsOpen, setOptionsOpen] = useState(false);
@@ -474,6 +476,27 @@ export const OptionDrawers = ({ className }: { className?: string }) => {
                                     }
                                 />
                             </div>
+                            {$showQgis2webLayers && (
+                                <>
+                                    <div className="flex flex-col items-center gap-2">
+                                        <Label>QGIS2Web dataset</Label>
+                                        <Select
+                                            trigger="Select dataset"
+                                            options={{
+                                                barcelona: "Barcelona",
+                                                helsinki: "Helsinki",
+                                            }}
+                                            value={$qgis2webDataset}
+                                            onValueChange={(v) =>
+                                                qgis2webDataset.set(
+                                                    v as typeof $qgis2webDataset,
+                                                )
+                                            }
+                                        />
+                                    </div>
+                                    <Separator className="bg-slate-300 w-[280px]" />
+                                </>
+                            )}
                             {$highlightTrainLines && (
                                 <>
                                     <div className="flex flex-col items-center gap-2">

@@ -21,20 +21,20 @@ export const mapGeoLocation = persistentAtom<OpenStreetMap>(
     "mapGeoLocation",
     {
         geometry: {
-            coordinates: [36.5748441, 139.2394179],
+            coordinates: [60.1699, 24.9384],
             type: "Point",
         },
         type: "Feature",
         properties: {
             osm_type: "R",
-            osm_id: 382313,
-            extent: [45.7112046, 122.7141754, 20.2145811, 154.205541],
-            country: "Japan",
+            osm_id: 3355195,
+            extent: [60.297, 24.739, 59.922, 25.254],
+            country: "Finland",
             osm_key: "place",
-            countrycode: "JP",
-            osm_value: "country",
-            name: "Japan",
-            type: "country",
+            countrycode: "FI",
+            osm_value: "city",
+            name: "Helsinki",
+            type: "city",
         },
     },
     {
@@ -119,6 +119,15 @@ export const trainStations = atom<any[]>([]);
 export const showQgis2webLayers = persistentAtom<boolean>(
     "showQgis2webLayers",
     false,
+    {
+        encode: JSON.stringify,
+        decode: JSON.parse,
+    },
+);
+export type Qgis2webDataset = "barcelona" | "helsinki";
+export const qgis2webDataset = persistentAtom<Qgis2webDataset>(
+    "qgis2webDataset",
+    "helsinki",
     {
         encode: JSON.stringify,
         decode: JSON.parse,
