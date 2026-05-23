@@ -27,7 +27,7 @@ export const mapGeoLocation = persistentAtom<OpenStreetMap>(
         type: "Feature",
         properties: {
             osm_type: "R",
-            osm_id: 3355195,
+            osm_id: 34914,
             extent: [60.297, 24.739, 59.922, 25.254],
             country: "Finland",
             osm_key: "place",
