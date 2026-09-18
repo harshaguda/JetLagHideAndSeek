@@ -18,6 +18,7 @@ import {
 } from "@/lib/context";
 import {
     findAdminBoundary,
+    findLocalZonesByLetter,
     findPlacesInZone,
     LOCATION_FIRST_TAG,
     nearestToQuestion,
@@ -203,6 +204,29 @@ export const determineMatchingBoundary = _.memoize(
                 }
 
                 const letter = englishName[0].toUpperCase();
+
+                // Answer from the downloaded boundaries when they cover the
+                // whole hiding zone. Unlike the single-point lookup in the
+                // "zone" case, this one is only correct if every qualifying
+                // zone is present, so findLocalZonesByLetter declines rather
+                // than answer from a partial extract.
+                const localZones = await findLocalZonesByLetter(
+                    question.cat.adminLevel,
+                    letter,
+                    mapGeoJSON.get(),
+                );
+
+                // An empty result would mean the downloaded data disagrees
+                // with the zone lookup above, so fall through to Overpass
+                // rather than hand safeUnion nothing to union.
+                if (localZones && localZones.length > 0) {
+                    boundary = safeUnion(
+                        turf.featureCollection(
+                            localZones as Feature<Polygon | MultiPolygon>[],
+                        ),
+                    );
+                    break;
+                }
 
                 boundary = turf.featureCollection(
                     osmtogeojson(

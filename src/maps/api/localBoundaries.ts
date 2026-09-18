@@ -1,6 +1,9 @@
 import * as turf from "@turf/turf";
+import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import _ from "lodash";
 import osmtogeojson from "osmtogeojson";
+
+import { safeUnion } from "@/maps/geo-utils";
 
 import { cacheFetch } from "./cache";
 import { CacheType } from "./types";
@@ -28,12 +31,18 @@ export const LOCAL_BOUNDARY_FILES = [
     "admin8/besos.xml",
     "admin8/elprat.xml",
     "admin8/santboi.xml",
-    // The Barcelonès comarca and the rest of the preset's hiding zone.
+    "admin8/santacoloma.xml",
+    // The Barcelonès comarca (admin 7) plus Esplugues and Cornellà, which the
+    // hiding zone needs and which no file in admin8/ supplies.
     "barcelona.json",
-    // Every admin_level 8 boundary across the wider metro area, which is what
-    // lets a "same zone" question resolve outside the preset itself.
-    "barcelona-admin8.json",
 ];
+
+/**
+ * How much of the area a question covers may be missing from the downloaded
+ * boundaries before they are considered unusable for a question that needs
+ * *every* zone. Complete sets measure 0, so this is noise tolerance, not slack.
+ */
+const MAX_UNCOVERED_FRACTION = 0.001;
 
 const OSM_TYPE_NAMES = {
     W: "way",
@@ -249,4 +258,54 @@ export const findLocalAdminBoundary = async (
             }
         }) ?? null
     );
+};
+
+/**
+ * Every downloaded boundary at `adminLevel` whose name starts with `letter`.
+ *
+ * Returns null when the downloaded data cannot answer the question, either
+ * because nothing is indexed at that level or because `area` reaches outside
+ * what was downloaded. That second case matters: unlike a single-point lookup,
+ * this one is only correct if *every* qualifying zone is present, and a partial
+ * extract would silently drop the ones beyond its edge. The caller falls back
+ * to Overpass in both cases.
+ */
+export const findLocalZonesByLetter = async (
+    adminLevel: 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+    letter: string,
+    area?: FeatureCollection<Polygon | MultiPolygon> | null,
+) => {
+    const { byAdminLevel } = await loadLocalBoundaries();
+    const candidates = byAdminLevel.get(String(adminLevel));
+
+    if (!candidates || candidates.length === 0) return null;
+
+    if (area && area.features.length > 0) {
+        // A bounding box is not enough: a municipality can be missing from the
+        // middle of an otherwise well-covered area, and the question would then
+        // quietly omit it from the answer. Adjacent OSM boundaries share their
+        // ways exactly, so a complete set leaves no gap at all and the
+        // tolerance below only absorbs arithmetic noise.
+        const zone = safeUnion(area);
+        const indexed = safeUnion(turf.featureCollection(candidates));
+        const uncovered = turf.difference(
+            turf.featureCollection([zone, indexed]),
+        );
+
+        if (
+            uncovered &&
+            turf.area(uncovered) / turf.area(zone) > MAX_UNCOVERED_FRACTION
+        ) {
+            return null;
+        }
+    }
+
+    const target = letter.toUpperCase();
+
+    return candidates.filter((feature) => {
+        const name =
+            feature.properties?.["name:en"] ?? feature.properties?.name;
+
+        return typeof name === "string" && name[0]?.toUpperCase() === target;
+    });
 };

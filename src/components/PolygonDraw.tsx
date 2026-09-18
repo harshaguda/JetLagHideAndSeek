@@ -1,4 +1,5 @@
 import "leaflet-draw/dist/leaflet.draw.css";
+import "@/lib/leafletDefaultIcon";
 
 import { useStore } from "@nanostores/react";
 import * as turf from "@turf/turf";
