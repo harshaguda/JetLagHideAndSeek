@@ -9,6 +9,7 @@ import {
     polyGeoJSON,
 } from "@/lib/context";
 import { safeUnion } from "@/maps/geo-utils";
+import { UNSET_QUESTION_TYPE } from "@/maps/schema";
 
 import { cacheFetch } from "./cache";
 import { LOCATION_FIRST_TAG, OVERPASS_API } from "./constants";
@@ -67,6 +68,12 @@ export const findTentacleLocations = async (
     question: EncompassingTentacleQuestionSchema,
     text: string = "Determining tentacle locations...",
 ) => {
+    // No location type chosen yet: there is nothing to look for, and
+    // LOCATION_FIRST_TAG has no entry to build a query from.
+    if (question.locationType === UNSET_QUESTION_TYPE) {
+        return turf.points([]);
+    }
+
     const query = `
 [out:json][timeout:25];
 nwr["${LOCATION_FIRST_TAG[question.locationType]}"="${question.locationType}"](around:${turf.convertLength(

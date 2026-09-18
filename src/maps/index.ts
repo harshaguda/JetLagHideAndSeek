@@ -26,6 +26,7 @@ import {
     thermometerPlanningPolygon,
 } from "./questions/thermometer";
 import type { Question, Questions } from "./schema";
+import { UNSET_QUESTION_TYPE } from "./schema";
 
 export * from "./geo-utils";
 
@@ -84,6 +85,9 @@ export async function adjustMapGeoDataForQuestion(
             case "thermometer":
                 return await adjustPerThermometer(question.data, mapGeoData);
             case "tentacles":
+                if (question.data.locationType === UNSET_QUESTION_TYPE) {
+                    return mapGeoData;
+                }
                 if (question.data.location === false) {
                     return adjustPerRadius(
                         { ...question.data, within: false },

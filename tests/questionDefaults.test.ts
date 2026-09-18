@@ -16,7 +16,9 @@ describe("a newly added matching question", () => {
             data: { lat: 41.3874, lng: 2.1686 },
         });
 
-        expect(parsed.data.type).toBe(UNSET_QUESTION_TYPE);
+        expect((parsed.data as { type: string }).type).toBe(
+            UNSET_QUESTION_TYPE,
+        );
     });
 
     it("constrains nothing until a type is chosen, so no API call is made", async () => {
@@ -50,7 +52,9 @@ describe("a newly added measuring question", () => {
             data: { lat: 41.3874, lng: 2.1686 },
         });
 
-        expect(parsed.data.type).toBe(UNSET_QUESTION_TYPE);
+        expect((parsed.data as { type: string }).type).toBe(
+            UNSET_QUESTION_TYPE,
+        );
     });
 
     it("measures nothing until a type is chosen", async () => {
@@ -72,6 +76,33 @@ describe("a newly added measuring question", () => {
         });
 
         expect(parsed.type).toBe("coastline");
+    });
+});
+
+describe("a newly added tentacles question", () => {
+    it("has no location type chosen yet, rather than defaulting to theme parks", () => {
+        const parsed = questionSchema.parse({
+            id: "tentacles",
+            data: { lat: 41.3874, lng: 2.1686 },
+        });
+
+        expect((parsed.data as { locationType: string }).locationType).toBe(
+            UNSET_QUESTION_TYPE,
+        );
+    });
+
+    it("looks for nothing until a location type is chosen", async () => {
+        const { findTentacleLocations } = await import("@/maps/api");
+
+        const parsed = questionSchema.parse({
+            id: "tentacles",
+            data: { lat: 41.3874, lng: 2.1686 },
+        });
+
+        // Returns empty without building a query -- LOCATION_FIRST_TAG has no
+        // entry for the unchosen state, so a query would be malformed.
+        const places = await findTentacleLocations(parsed.data as any);
+        expect(places.features).toHaveLength(0);
     });
 });
 

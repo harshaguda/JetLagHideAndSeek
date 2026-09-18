@@ -28,6 +28,7 @@ import {
     type TentacleQuestion,
     tentacleQuestionSchema,
     type TraditionalTentacleQuestion,
+    UNSET_QUESTION_TYPE,
 } from "@/maps/schema";
 
 import { QuestionCard } from "./base";
@@ -98,7 +99,8 @@ export const TentacleQuestionComponent = ({
                             .flatMap((x) =>
                                 determineUnionizedStrings(x.shape.locationType),
                             )
-                            .map((x) => [(x._def as any).value, x.description]),
+                            .map((x) => [(x._def as any).value, x.description])
+                            .filter(([value]) => value !== UNSET_QUESTION_TYPE),
                     )}
                     groups={Object.fromEntries(
                         tentacleQuestionSchema.options
@@ -118,6 +120,9 @@ export const TentacleQuestionComponent = ({
                     value={data.locationType}
                     onValueChange={async (value) => {
                         if (value === "custom") {
+                            // Prefilled from whatever type was chosen before;
+                            // with none chosen there is nothing to prefill from
+                            // and findTentacleLocations returns empty.
                             const priorLocations = await findTentacleLocations(
                                 data as TraditionalTentacleQuestion,
                             );

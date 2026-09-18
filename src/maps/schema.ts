@@ -165,7 +165,14 @@ const baseTentacleQuestionSchema = ordinaryBaseQuestionSchema.extend({
 });
 const tentacleQuestionSpecificSchemaFifteen = baseTentacleQuestionSchema.extend(
     {
-        locationType: tentacleLocationsFifteen.default("theme_park"),
+        // As with matching and measuring: a freshly added question queries
+        // nothing until a location type is picked. Kept out of the dropdown.
+        locationType: z
+            .union([
+                z.literal(UNSET_QUESTION_TYPE).describe("Not selected"),
+                tentacleLocationsFifteen,
+            ])
+            .default(UNSET_QUESTION_TYPE),
         places: z.array(z.any()).optional(),
     },
 );
@@ -177,7 +184,9 @@ const tentacleQuestionSpecificSchemaOne = baseTentacleQuestionSchema.extend({
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const encompassingTentacleQuestionSchema = baseTentacleQuestionSchema.extend({
-    locationType: apiLocationSchema,
+    // Widened to admit the unchosen state, so findTentacleLocations can be
+    // handed a question that has no location type yet and bail on it.
+    locationType: z.union([z.literal(UNSET_QUESTION_TYPE), apiLocationSchema]),
     places: z.array(z.any()).optional(),
 });
 
