@@ -181,6 +181,25 @@ export const CITY_PRESETS: Record<CityPresetKey, CityPreset> = {
                     type: "city",
                 },
             },
+            {
+                geometry: {
+                    coordinates: [41.3241016, 2.0511278],
+                    type: "Point",
+                },
+                type: "Feature",
+                properties: {
+                    osm_type: "R",
+                    osm_id: 347545,
+                    extent: [41.3622983, 1.99879, 41.285852, 2.0784854],
+                    country: "Spain",
+                    osm_key: "boundary",
+                    countrycode: "ES",
+                    osm_value: "administrative",
+                    state: "Catalonia",
+                    name: "Sant Boi de Llobregat",
+                    type: "city",
+                },
+            },
         ],
     },
 };

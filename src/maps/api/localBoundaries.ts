@@ -27,6 +27,7 @@ export const LOCAL_BOUNDARY_FILES = [
     "admin8/badalona.xml",
     "admin8/besos.xml",
     "admin8/elprat.xml",
+    "admin8/santboi.xml",
     // The Barcelonès comarca and the rest of the preset's hiding zone.
     "barcelona.json",
     // Every admin_level 8 boundary across the wider metro area, which is what
