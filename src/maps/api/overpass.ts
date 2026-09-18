@@ -12,6 +12,7 @@ import { safeUnion } from "@/maps/geo-utils";
 
 import { cacheFetch } from "./cache";
 import { LOCATION_FIRST_TAG, OVERPASS_API } from "./constants";
+import { findLocalAdminBoundary, findLocalBoundary } from "./localBoundaries";
 import type {
     EncompassingTentacleQuestionSchema,
     HomeGameMatchingQuestions,
@@ -43,6 +44,9 @@ export const determineGeoJSON = async (
         R: "relation",
         N: "node",
     };
+    const localBoundary = await findLocalBoundary(osmId, osmTypeLetter);
+    if (localBoundary) return localBoundary;
+
     const osmType = osmTypeMap[osmTypeLetter];
     const query = `[out:json];${osmType}(${osmId});out geom;`;
     const data = await getOverpassData(
@@ -110,6 +114,13 @@ export const findAdminBoundary = async (
     longitude: number,
     adminLevel: 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
 ) => {
+    const localBoundary = await findLocalAdminBoundary(
+        latitude,
+        longitude,
+        adminLevel,
+    );
+    if (localBoundary) return localBoundary;
+
     const query = `
 [out:json];
 is_in(${latitude}, ${longitude})->.a;
@@ -235,7 +246,7 @@ out ${outType};
             .filter((entry) => entry.added)
             .map((entry) => entry.location);
         const allLocations = [primaryLocation, ...additionalLocations].filter(
-            (loc) => loc && loc.properties
+            (loc) => loc && loc.properties,
         );
         const relationToAreaBlocks = allLocations
             .map((loc, idx) => {
@@ -365,12 +376,12 @@ export const determineMapBoundaries = async () => {
         ]
             .filter((x) => x && x.location && x.location.properties)
             .map(async (location) => ({
-            added: location.added,
-            data: await determineGeoJSON(
-                location.location.properties.osm_id.toString(),
-                location.location.properties.osm_type,
-            ),
-        })),
+                added: location.added,
+                data: await determineGeoJSON(
+                    location.location.properties.osm_id.toString(),
+                    location.location.properties.osm_type,
+                ),
+            })),
     );
 
     let mapGeoData = turf.featureCollection([

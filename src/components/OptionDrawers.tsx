@@ -9,10 +9,12 @@ import {
     DrawerTitle,
     DrawerTrigger,
 } from "@/components/ui/drawer";
+import { CITY_PRESET_OPTIONS, CITY_PRESETS } from "@/lib/cityPresets";
 import {
     additionalMapGeoLocations,
     alwaysUsePastebin,
     animateMapMovements,
+    applyCityPreset,
     autoSave,
     autoZoom,
     customInitPreference,
@@ -37,8 +39,9 @@ import {
     qgis2webDataset,
     questions,
     save,
-    showTutorial,
+    selectedCity,
     showQgis2webLayers,
+    showTutorial,
     thunderforestApiKey,
     triggerLocalRefresh,
     useCustomStations,
@@ -81,6 +84,7 @@ export const OptionDrawers = ({ className }: { className?: string }) => {
     const $autoSave = useStore(autoSave);
     const $hidingZone = useStore(hidingZone);
     const $planningMode = useStore(planningModeEnabled);
+    const $selectedCity = useStore(selectedCity);
     const $thunderforestApiKey = useStore(thunderforestApiKey);
     const $showQgis2webLayers = useStore(showQgis2webLayers);
     const $pastebinApiKey = useStore(pastebinApiKey);
@@ -461,6 +465,34 @@ export const OptionDrawers = ({ className }: { className?: string }) => {
                                         highlightTrainLines.set(willBeEnabled);
                                     }}
                                 />
+                            </div>
+                            <Separator className="bg-slate-300 w-[280px]" />
+                            <div className="flex flex-col items-center gap-2">
+                                <Label>City</Label>
+                                <Select
+                                    trigger="Select city"
+                                    options={CITY_PRESET_OPTIONS}
+                                    value={$selectedCity}
+                                    onValueChange={(city) => {
+                                        if (city === $selectedCity) return;
+
+                                        const hadQuestions =
+                                            questions.get().length > 0;
+
+                                        applyCityPreset(city);
+
+                                        toast.success(
+                                            hadQuestions
+                                                ? `Switched to ${CITY_PRESETS[city].label}; questions cleared.`
+                                                : `Switched to ${CITY_PRESETS[city].label}.`,
+                                        );
+                                    }}
+                                />
+                                <p className="text-xs text-gray-500">
+                                    Loads the city and its neighbouring
+                                    municipalities as the hiding zone. Fine-tune
+                                    the list with the place picker.
+                                </p>
                             </div>
                             <Separator className="bg-slate-300 w-[280px]" />
                             <div className="flex flex-row items-center gap-2">

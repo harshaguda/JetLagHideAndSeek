@@ -81,11 +81,11 @@ export const MatchingQuestionComponent = ({
                                 3: "OSM Zone 3 (region in Japan)",
                                 4: "OSM Zone 4 (prefecture in Japan)",
                                 5: "OSM Zone 5",
-                                6: "OSM Zone 6",
-                                7: "OSM Zone 7",
-                                8: "OSM Zone 8",
-                                9: "OSM Zone 9",
-                                10: "OSM Zone 10",
+                                6: "OSM Zone 6 (province)",
+                                7: "OSM Zone 7 (comarca/county)",
+                                8: "OSM Zone 8 (municipality)",
+                                9: "OSM Zone 9 (district)",
+                                10: "OSM Zone 10 (neighbourhood)",
                             }}
                             value={data.cat.adminLevel.toString()}
                             onValueChange={(value) =>
@@ -137,8 +137,8 @@ export const MatchingQuestionComponent = ({
             questionSpecific = (
                 <>
                     <span className="px-2 text-center text-orange-500">
-                        This question will only influence the map when you
-                        click on a hiding zone in the hiding zone sidebar.
+                        This question will only influence the map when you click
+                        on a hiding zone in the hiding zone sidebar.
                     </span>
                     <SidebarMenuItem className={MENU_ITEM_CLASSNAME}>
                         <div className="flex flex-row items-center justify-between w-full">
@@ -149,8 +149,7 @@ export const MatchingQuestionComponent = ({
                                 checked={!!(data as any).showPlaces}
                                 onCheckedChange={(checked) =>
                                     questionModified(
-                                        ((data as any).showPlaces =
-                                            !!checked),
+                                        ((data as any).showPlaces = !!checked),
                                     )
                                 }
                                 disabled={!$displayHidingZones || $isLoading}
@@ -386,7 +385,7 @@ export const MatchingQuestionComponent = ({
                             }
                             // The category should be defined such that no error is thrown if this is a zone question.
                             if (!(data as any).cat) {
-                                (data as any).cat = { adminLevel: 3 };
+                                (data as any).cat = { adminLevel: 8 };
                             }
                             questionModified((data.type = value));
                             return;
@@ -399,7 +398,7 @@ export const MatchingQuestionComponent = ({
 
                         // The category should be defined such that no error is thrown if this is a zone question.
                         if (!(data as any).cat) {
-                            (data as any).cat = { adminLevel: 3 };
+                            (data as any).cat = { adminLevel: 8 };
                         }
                         questionModified((data.type = value));
                     }}

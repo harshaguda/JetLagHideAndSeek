@@ -149,10 +149,7 @@ export const Map = ({ className }: { className?: string }) => {
         [],
     );
 
-    const qgis2webOverlayRef = useMemo(
-        () => ({ layers: [] as L.Layer[] }),
-        [],
-    );
+    const qgis2webOverlayRef = useMemo(() => ({ layers: [] as L.Layer[] }), []);
 
     const removeQgis2webOverlays = () => {
         if (!map) return;
@@ -333,7 +330,7 @@ export const Map = ({ className }: { className?: string }) => {
                 const assetBase = (import.meta.env.BASE_URL || "/").endsWith(
                     "/",
                 )
-                    ? (import.meta.env.BASE_URL || "/")
+                    ? import.meta.env.BASE_URL || "/"
                     : `${import.meta.env.BASE_URL}/`;
                 const dataset =
                     QGIS2WEB_DATASETS[$qgis2webDataset] ??
@@ -556,10 +553,9 @@ export const Map = ({ className }: { className?: string }) => {
             >
                 {!($highlightTrainLines && $thunderforestApiKey) && (
                     <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors; &copy; <a href="https://carto.com/attributions">CARTO</a>; &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>; Powered by Esri and Turf.js'
-                        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-                        subdomains="abcd"
-                        maxZoom={20} // This technically should be 6, but once the ratelimiting starts this can take over
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors; Powered by Esri and Turf.js'
+                        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        maxZoom={19}
                         minZoom={2}
                         noWrap
                     />
@@ -567,7 +563,7 @@ export const Map = ({ className }: { className?: string }) => {
                 {$highlightTrainLines && $thunderforestApiKey && (
                     <TileLayer
                         url={`https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=${$thunderforestApiKey}`}
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors; &copy; <a href="https://carto.com/attributions">CARTO</a>; &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>; Powered by Esri and Turf.js'
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors; &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>; Powered by Esri and Turf.js'
                         maxZoom={22}
                         minZoom={2}
                         noWrap

@@ -1,0 +1,2943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3498749 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="30236813" visible="true" version="8" changeset="27435849" timestamp="2014-12-13T06:03:15Z" user="jconstanti" uid="531165" lat="41.3721659" lon="2.1264840"/>
+ <node id="30237081" visible="true" version="7" changeset="18228741" timestamp="2013-10-07T12:23:01Z" user="jconstanti" uid="531165" lat="41.3726850" lon="2.1257544"/>
+ <node id="30237104" visible="true" version="10" changeset="124564763" timestamp="2022-08-06T14:24:09Z" user="Toni Serra" uid="3859465" lat="41.3741959" lon="2.1238666"/>
+ <node id="30264647" visible="true" version="11" changeset="151031941" timestamp="2024-05-07T23:22:32Z" user="pswsm" uid="20249696" lat="41.3731930" lon="2.1249370"/>
+ <node id="30584105" visible="true" version="6" changeset="160263555" timestamp="2024-12-13T22:16:15Z" user="MarcosdeE" uid="12230027" lat="41.3686629" lon="2.0991823"/>
+ <node id="35120240" visible="true" version="7" changeset="54348317" timestamp="2017-12-04T23:35:16Z" user="yopaseopor" uid="500572" lat="41.3758523" lon="2.1140550"/>
+ <node id="60200335" visible="true" version="4" changeset="91763743" timestamp="2020-09-30T11:03:38Z" user="caminsperfer" uid="10187213" lat="41.3672409" lon="2.1318853"/>
+ <node id="251543450" visible="true" version="3" changeset="10317602" timestamp="2012-01-07T00:03:07Z" user="moogido" uid="391962" lat="41.3778967" lon="2.1213243"/>
+ <node id="251543584" visible="true" version="8" changeset="94535596" timestamp="2020-11-21T08:40:52Z" user="yopaseopor" uid="500572" lat="41.3748347" lon="2.1232589"/>
+ <node id="257940879" visible="true" version="4" changeset="64967908" timestamp="2018-11-28T11:05:36Z" user="Toni Serra" uid="3859465" lat="41.3667529" lon="2.1320559"/>
+ <node id="262988804" visible="true" version="11" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3715914" lon="2.1273594"/>
+ <node id="340197288" visible="true" version="11" changeset="73367022" timestamp="2019-08-14T23:04:03Z" user="caminsperfer" uid="10187213" lat="41.3720104" lon="2.1267356"/>
+ <node id="401870564" visible="true" version="8" changeset="134945546" timestamp="2023-04-15T15:37:24Z" user="Toni Serra" uid="3859465" lat="41.3757866" lon="2.1173406"/>
+ <node id="425612228" visible="true" version="12" changeset="172447691" timestamp="2025-09-25T16:13:16Z" user="Marion_Moseby" uid="5379200" lat="41.3758820" lon="2.1180097"/>
+ <node id="425612230" visible="true" version="3" changeset="65901574" timestamp="2018-12-31T00:59:39Z" user="Jose Luis Infante" uid="126203" lat="41.3759533" lon="2.1181217"/>
+ <node id="425612235" visible="true" version="3" changeset="9598854" timestamp="2011-10-19T11:18:57Z" user="moogido" uid="391962" lat="41.3762785" lon="2.1186794"/>
+ <node id="425612237" visible="true" version="2" changeset="9598854" timestamp="2011-10-19T11:18:57Z" user="moogido" uid="391962" lat="41.3765537" lon="2.1191394"/>
+ <node id="425612244" visible="true" version="6" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3769008" lon="2.1197163"/>
+ <node id="425612275" visible="true" version="5" changeset="142494130" timestamp="2023-10-12T19:20:40Z" user="pswsm" uid="20249696" lat="41.3772043" lon="2.1202367"/>
+ <node id="575788698" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3413005" lon="2.0895215"/>
+ <node id="575788755" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3427865" lon="2.0906358"/>
+ <node id="575788756" visible="true" version="4" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3476477" lon="2.0922927"/>
+ <node id="575788758" visible="true" version="4" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3511344" lon="2.0981221"/>
+ <node id="575788759" visible="true" version="4" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3517778" lon="2.0995442"/>
+ <node id="575788760" visible="true" version="4" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3553822" lon="2.0975453"/>
+ <node id="575788761" visible="true" version="5" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3519314" lon="2.0998749"/>
+ <node id="575788764" visible="true" version="6" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3585182" lon="2.0935950"/>
+ <node id="575789376" visible="true" version="4" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3802790" lon="2.1028258"/>
+ <node id="575789381" visible="true" version="3" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3762878" lon="2.1000578"/>
+ <node id="575789386" visible="true" version="2" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3701407" lon="2.0986632"/>
+ <node id="575789388" visible="true" version="2" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3682983" lon="2.0979808"/>
+ <node id="575789389" visible="true" version="2" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3675606" lon="2.0959197"/>
+ <node id="575789390" visible="true" version="2" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3667448" lon="2.0938426"/>
+ <node id="575789391" visible="true" version="1" changeset="3254232" timestamp="2009-11-30T10:41:22Z" user="balrog-kun" uid="20587" lat="41.3679330" lon="2.0924125"/>
+ <node id="575789392" visible="true" version="1" changeset="3254232" timestamp="2009-11-30T10:41:22Z" user="balrog-kun" uid="20587" lat="41.3688978" lon="2.0921773"/>
+ <node id="575789394" visible="true" version="1" changeset="3254232" timestamp="2009-11-30T10:41:23Z" user="balrog-kun" uid="20587" lat="41.3670983" lon="2.0866705"/>
+ <node id="576936636" visible="true" version="1" changeset="3262063" timestamp="2009-12-01T07:29:29Z" user="balrog-kun" uid="20587" lat="41.3400311" lon="2.0936482"/>
+ <node id="576936637" visible="true" version="1" changeset="3262063" timestamp="2009-12-01T07:29:29Z" user="balrog-kun" uid="20587" lat="41.3385626" lon="2.0967111"/>
+ <node id="576936638" visible="true" version="1" changeset="3262063" timestamp="2009-12-01T07:29:30Z" user="balrog-kun" uid="20587" lat="41.3370978" lon="2.0992844"/>
+ <node id="576936641" visible="true" version="4" changeset="64603093" timestamp="2018-11-17T18:32:58Z" user="jqngarcia" uid="5126253" lat="41.3351454" lon="2.1023932"/>
+ <node id="576936642" visible="true" version="9" changeset="148666583" timestamp="2024-03-15T00:12:43Z" user="MarcosdeE" uid="12230027" lat="41.3483250" lon="2.1368394"/>
+ <node id="576936643" visible="true" version="4" changeset="13871046" timestamp="2012-11-14T12:52:02Z" user="ivansanchez" uid="5265" lat="41.3555787" lon="2.1320003"/>
+ <node id="576936644" visible="true" version="4" changeset="13871046" timestamp="2012-11-14T12:52:02Z" user="ivansanchez" uid="5265" lat="41.3557937" lon="2.1325486"/>
+ <node id="576936645" visible="true" version="4" changeset="13871046" timestamp="2012-11-14T12:52:02Z" user="ivansanchez" uid="5265" lat="41.3572532" lon="2.1331473"/>
+ <node id="576936646" visible="true" version="4" changeset="13871046" timestamp="2012-11-14T12:52:02Z" user="ivansanchez" uid="5265" lat="41.3599482" lon="2.1333635"/>
+ <node id="667898752" visible="true" version="5" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3700289" lon="2.1300664"/>
+ <node id="677439927" visible="true" version="7" changeset="134945546" timestamp="2023-04-15T15:37:24Z" user="Toni Serra" uid="3859465" lat="41.3758802" lon="2.1124684"/>
+ <node id="687897075" visible="true" version="4" changeset="146498296" timestamp="2024-01-21T02:11:43Z" user="pswsm" uid="20249696" lat="41.3758599" lon="2.1135654"/>
+ <node id="687897174" visible="true" version="5" changeset="187357340" timestamp="2026-08-12T19:21:38Z" user="marcmarti" uid="10355154" lat="41.3757593" lon="2.1217430"/>
+ <node id="939880925" visible="true" version="48" changeset="182403454" timestamp="2026-05-08T22:45:42Z" user="ivanruiz" uid="23829548" lat="41.3595118" lon="2.0996318">
+  <tag k="capital" v="8"/>
+  <tag k="ele" v="9"/>
+  <tag k="name" v="l'Hospitalet de Llobregat"/>
+  <tag k="name:ar" v="لوسبيتاليت دي يوبريغات"/>
+  <tag k="name:ca" v="l'Hospitalet de Llobregat"/>
+  <tag k="name:el" v="Οσπιταλέτ ντε Λιοβρεγάτ"/>
+  <tag k="name:ml" v="ലോസ്പിറ്റാലെറ്റ് ഡി ലോബ്രെഗാറ്റ്"/>
+  <tag k="name:ru" v="Оспиталет-де-Льобрегат"/>
+  <tag k="name:sr" v="Лоспиталет де Љобрегат"/>
+  <tag k="name:uk" v="Оспіталет-де-Льобрегат"/>
+  <tag k="old_name:es" v="Hospitalet de Llobregat"/>
+  <tag k="place" v="city"/>
+  <tag k="population" v="292161"/>
+  <tag k="population:date" v="2025"/>
+  <tag k="ref:idescat" v="0810170001701"/>
+  <tag k="ref:ine" v="08101000101"/>
+  <tag k="source:population" v="https://www.idescat.cat/codis/?id=50&amp;n=9&amp;c=081017"/>
+  <tag k="website" v="https://www.l-h.cat/"/>
+  <tag k="wikidata" v="Q15470"/>
+  <tag k="wikimedia_commons" v="Category:L'Hospitalet de Llobregat"/>
+  <tag k="wikipedia" v="ca:L'Hospitalet de Llobregat"/>
+ </node>
+ <node id="960996565" visible="true" version="3" changeset="54348317" timestamp="2017-12-04T23:35:17Z" user="yopaseopor" uid="500572" lat="41.3758187" lon="2.1154121"/>
+ <node id="966339770" visible="true" version="5" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154" lat="41.3682106" lon="2.1314939"/>
+ <node id="1482469049" visible="true" version="2" changeset="53535928" timestamp="2017-11-05T18:27:00Z" user="Lusbert" uid="2748485" lat="41.3694190" lon="2.1306834"/>
+ <node id="1528727075" visible="true" version="4" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3754084" lon="2.1220553"/>
+ <node id="1528727077" visible="true" version="4" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3753080" lon="2.1222406"/>
+ <node id="1535825956" visible="true" version="2" changeset="65901574" timestamp="2018-12-31T00:59:40Z" user="Jose Luis Infante" uid="126203" lat="41.3755055" lon="2.1219067"/>
+ <node id="1535825957" visible="true" version="6" changeset="187100725" timestamp="2026-08-07T18:01:38Z" user="larajoleraa" uid="21799307" lat="41.3755987" lon="2.1217821">
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:signals" v="yes"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="1535839511" visible="true" version="5" changeset="175521215" timestamp="2025-12-04T21:48:30Z" user="caminsperfer" uid="10187213" lat="41.3735552" lon="2.1242498"/>
+ <node id="1560611125" visible="true" version="2" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977" lat="41.3748938" lon="2.1231552"/>
+ <node id="1595126752" visible="true" version="6" changeset="144183018" timestamp="2023-11-18T17:06:34Z" user="MacLondon" uid="322039" lat="41.3756783" lon="2.1217654"/>
+ <node id="1624386754" visible="true" version="4" changeset="124564763" timestamp="2022-08-06T14:24:09Z" user="Toni Serra" uid="3859465" lat="41.3746599" lon="2.1234495"/>
+ <node id="2013654021" visible="true" version="1" changeset="13871046" timestamp="2012-11-14T12:51:58Z" user="ivansanchez" uid="5265" lat="41.3488503" lon="2.1374024"/>
+ <node id="2013654022" visible="true" version="1" changeset="13871046" timestamp="2012-11-14T12:51:58Z" user="ivansanchez" uid="5265" lat="41.3558849" lon="2.1327317"/>
+ <node id="2013654023" visible="true" version="1" changeset="13871046" timestamp="2012-11-14T12:51:58Z" user="ivansanchez" uid="5265" lat="41.3563307" lon="2.1330177"/>
+ <node id="2013654024" visible="true" version="1" changeset="13871046" timestamp="2012-11-14T12:51:58Z" user="ivansanchez" uid="5265" lat="41.3578001" lon="2.1332156"/>
+ <node id="2013654025" visible="true" version="1" changeset="13871046" timestamp="2012-11-14T12:51:58Z" user="ivansanchez" uid="5265" lat="41.3586476" lon="2.1332010"/>
+ <node id="2013654026" visible="true" version="1" changeset="13871046" timestamp="2012-11-14T12:51:58Z" user="ivansanchez" uid="5265" lat="41.3596768" lon="2.1332963"/>
+ <node id="2013654027" visible="true" version="1" changeset="13871046" timestamp="2012-11-14T12:51:58Z" user="ivansanchez" uid="5265" lat="41.3601335" lon="2.1335089"/>
+ <node id="2013654028" visible="true" version="3" changeset="64603093" timestamp="2018-11-17T18:32:59Z" user="jqngarcia" uid="5126253" lat="41.3609771" lon="2.1345117"/>
+ <node id="2013654029" visible="true" version="4" changeset="64967604" timestamp="2018-11-28T10:53:17Z" user="Toni Serra" uid="3859465" lat="41.3655374" lon="2.1328960"/>
+ <node id="2013654034" visible="true" version="4" changeset="77761747" timestamp="2019-11-30T16:22:48Z" user="yopaseopor" uid="500572" lat="41.3706099" lon="2.1293396"/>
+ <node id="2013654035" visible="true" version="4" changeset="73367022" timestamp="2019-08-14T23:04:03Z" user="caminsperfer" uid="10187213" lat="41.3710566" lon="2.1285370"/>
+ <node id="2013654036" visible="true" version="4" changeset="77761747" timestamp="2019-11-30T16:22:48Z" user="yopaseopor" uid="500572" lat="41.3712380" lon="2.1280109"/>
+ <node id="2013654037" visible="true" version="2" changeset="27435849" timestamp="2014-12-13T06:03:17Z" user="jconstanti" uid="531165" lat="41.3724212" lon="2.1261500"/>
+ <node id="2013654038" visible="true" version="2" changeset="27435849" timestamp="2014-12-13T06:03:16Z" user="jconstanti" uid="531165" lat="41.3725425" lon="2.1259650"/>
+ <node id="2013654048" visible="true" version="1" changeset="13871046" timestamp="2012-11-14T12:51:59Z" user="ivansanchez" uid="5265" lat="41.3768277" lon="2.1094300"/>
+ <node id="2013654052" visible="true" version="2" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3788352" lon="2.1065120"/>
+ <node id="2013654053" visible="true" version="2" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3791086" lon="2.1060431"/>
+ <node id="2195526826" visible="true" version="4" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3762903" lon="2.1186963"/>
+ <node id="2507734015" visible="true" version="2" changeset="180640158" timestamp="2026-03-30T17:14:37Z" user="El-Vikingo" uid="8199025" lat="41.3722044" lon="2.1264335">
+  <tag k="crossing:signals" v="yes"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="2706857314" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3644700" lon="2.0871636"/>
+ <node id="2972004898" visible="true" version="1" changeset="24261522" timestamp="2014-07-20T20:08:01Z" user="micha_k" uid="37608" lat="41.3385972" lon="2.1120499"/>
+ <node id="3004013783" visible="true" version="2" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3738885" lon="2.1012008"/>
+ <node id="3004013785" visible="true" version="2" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3745407" lon="2.1011572"/>
+ <node id="3067409324" visible="true" version="4" changeset="113177998" timestamp="2021-10-31T01:36:48Z" user="friguron" uid="843351" lat="41.3665841" lon="2.0864298"/>
+ <node id="3096490091" visible="true" version="4" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3590438" lon="2.0955986"/>
+ <node id="3145262115" visible="true" version="4" changeset="81473191" timestamp="2020-02-25T21:24:27Z" user="yopaseopor" uid="500572" lat="41.3532007" lon="2.1339658"/>
+ <node id="3145262121" visible="true" version="3" changeset="66841288" timestamp="2019-02-01T18:46:49Z" user="ccamara" uid="423535" lat="41.3635707" lon="2.1337999"/>
+ <node id="3145723390" visible="true" version="6" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3700726" lon="2.1300027"/>
+ <node id="3163820493" visible="true" version="1" changeset="26515236" timestamp="2014-11-02T22:52:22Z" user="friguron" uid="843351" lat="41.3695238" lon="2.0897130"/>
+ <node id="3367972393" visible="true" version="5" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3592300" lon="2.0931539"/>
+ <node id="3618456746" visible="true" version="2" changeset="32215820" timestamp="2015-06-25T23:10:26Z" user="Jorge Franganillo" uid="3014792" lat="41.3735331" lon="2.1242839"/>
+ <node id="3618456747" visible="true" version="1" changeset="32215617" timestamp="2015-06-25T22:46:29Z" user="Jorge Franganillo" uid="3014792" lat="41.3726604" lon="2.1257907"/>
+ <node id="3618456748" visible="true" version="2" changeset="73367022" timestamp="2019-08-14T23:04:03Z" user="caminsperfer" uid="10187213" lat="41.3718956" lon="2.1269163"/>
+ <node id="3618456749" visible="true" version="9" changeset="182739542" timestamp="2026-05-16T12:14:00Z" user="ivanruiz" uid="23829548" lat="41.3691638" lon="2.1308754">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Riera Blanca - Santiago Ramon y Cajal"/>
+  <tag k="name:ca" v="Riera Blanca - Santiago Ramon y Cajal"/>
+  <tag k="network" v="Autobús urbà de Barcelona"/>
+  <tag k="network:wikidata" v="Q16972016"/>
+  <tag k="operator" v="Transports Metropolitans de Barcelona"/>
+  <tag k="operator:short" v="TMB"/>
+  <tag k="operator:type" v="public"/>
+  <tag k="operator:wikidata" v="Q1778212"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="3652"/>
+  <tag k="route_ref" v="V1;LH2"/>
+ </node>
+ <node id="3618456750" visible="true" version="2" changeset="77761747" timestamp="2019-11-30T16:22:48Z" user="yopaseopor" uid="500572" lat="41.3686774" lon="2.1312053"/>
+ <node id="3618456751" visible="true" version="6" changeset="152987870" timestamp="2024-06-21T11:15:06Z" user="MarcosdeE" uid="12230027" lat="41.3663633" lon="2.1323204"/>
+ <node id="3621673349" visible="true" version="1" changeset="32242299" timestamp="2015-06-27T12:43:29Z" user="Jorge Franganillo" uid="3014792" lat="41.3669243" lon="2.1319842"/>
+ <node id="3754942568" visible="true" version="2" changeset="64908135" timestamp="2018-11-26T18:41:44Z" user="illot" uid="9051400" lat="41.3763944" lon="2.1188741"/>
+ <node id="4750796241" visible="true" version="1" changeset="47094936" timestamp="2017-03-23T11:48:31Z" user="friguron" uid="843351" lat="41.3688166" lon="2.0871845"/>
+ <node id="5264616254" visible="true" version="6" changeset="172071916" timestamp="2025-09-17T15:31:20Z" user="MarcosdeE" uid="12230027" lat="41.3758353" lon="2.1146512">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Collblanc - Cardenal Reig"/>
+  <tag k="name:ca" v="Collblanc - Cardenal Reig"/>
+  <tag k="network" v="TMB"/>
+  <tag k="network:wikidata" v="Q1778212"/>
+  <tag k="operator" v="Transports Metropolitans de Barcelona"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="1259"/>
+  <tag k="route_ref" v="D20 H8 54 157 N14 N28"/>
+  <tag k="url" v="https://www.ambmobilitat.cat/Principales/DatosParada.aspx?cerca=1&amp;CodParada=001259"/>
+  <tag k="website" v="https://www.tmb.cat/ca/barcelona/autobusos/-/lineabus/parada/1259"/>
+ </node>
+ <node id="5264616329" visible="true" version="5" changeset="167705912" timestamp="2025-06-16T17:46:52Z" user="MarcosdeE" uid="12230027" lat="41.3770052" lon="2.1199015">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Les Corts - Aurora Bertrana"/>
+  <tag k="name:ca" v="Les Corts - Aurora Bertrana"/>
+  <tag k="network" v="TMB"/>
+  <tag k="network:wikidata" v="Q1778212"/>
+  <tag k="operator" v="Transports Metropolitans de Barcelona"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="1713"/>
+  <tag k="route_ref" v="54 157 D20 H8 L50 L62 N14 N28"/>
+  <tag k="url" v="https://www.ambmobilitat.cat/Principales/DatosParada.aspx?cerca=1&amp;CodParada=001713"/>
+  <tag k="website" v="https://www.tmb.cat/ca/barcelona/autobusos/-/lineabus/parada/1713"/>
+ </node>
+ <node id="5264791769" visible="true" version="1" changeset="54348317" timestamp="2017-12-04T23:35:10Z" user="yopaseopor" uid="500572" lat="41.3758089" lon="2.1159983"/>
+ <node id="5264791770" visible="true" version="6" changeset="174064590" timestamp="2025-11-01T14:15:30Z" user="MacLondon" uid="322039" lat="41.3759061" lon="2.1112778"/>
+ <node id="5264791964" visible="true" version="2" changeset="65901574" timestamp="2018-12-31T00:59:41Z" user="Jose Luis Infante" uid="126203" lat="41.3757998" lon="2.1164342"/>
+ <node id="5264791965" visible="true" version="2" changeset="95615298" timestamp="2020-12-10T12:02:04Z" user="Alfonso RG" uid="3313579" lat="41.3759015" lon="2.1114883"/>
+ <node id="5264792101" visible="true" version="1" changeset="54348317" timestamp="2017-12-04T23:35:09Z" user="yopaseopor" uid="500572" lat="41.3758551" lon="2.1137810"/>
+ <node id="5264792102" visible="true" version="3" changeset="145643247" timestamp="2023-12-29T02:11:48Z" user="pswsm" uid="20249696" lat="41.3758266" lon="2.1149907"/>
+ <node id="5264792104" visible="true" version="5" changeset="172216761" timestamp="2025-09-20T17:51:59Z" user="MarcosdeE" uid="12230027" lat="41.3757853" lon="2.1174512">
+  <tag k="crossing" v="no"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="5306568886" visible="true" version="2" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3694979" lon="2.1306248">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="5306572366" visible="true" version="3" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3698635" lon="2.1302800"/>
+ <node id="5405788370" visible="true" version="4" changeset="141780433" timestamp="2023-09-26T15:41:36Z" user="FvGordon" uid="161619" lat="41.3758106" lon="2.1159172"/>
+ <node id="5758403322" visible="true" version="2" changeset="115856110" timestamp="2022-01-06T22:33:12Z" user="Toni Serra" uid="3859465" lat="41.3758732" lon="2.1128021">
+  <tag k="maxspeed" v="30"/>
+  <tag k="traffic_sign" v="maxspeed"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="5908150785" visible="true" version="3" changeset="64603093" timestamp="2018-11-17T18:33:00Z" user="jqngarcia" uid="5126253" lat="41.3406943" lon="2.1179226"/>
+ <node id="6069092922" visible="true" version="3" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3480736" lon="2.0922995"/>
+ <node id="6069092935" visible="true" version="1" changeset="64603093" timestamp="2018-11-17T18:32:58Z" user="jqngarcia" uid="5126253" lat="41.3643650" lon="2.1329784"/>
+ <node id="6069092936" visible="true" version="1" changeset="64603093" timestamp="2018-11-17T18:32:58Z" user="jqngarcia" uid="5126253" lat="41.3625694" lon="2.1351242"/>
+ <node id="6069092937" visible="true" version="2" changeset="187443789" timestamp="2026-08-14T13:44:11Z" user="marcmarti" uid="10355154" lat="41.3612246" lon="2.1347637"/>
+ <node id="6069092938" visible="true" version="1" changeset="64603093" timestamp="2018-11-17T18:32:58Z" user="jqngarcia" uid="5126253" lat="41.3606045" lon="2.1339548"/>
+ <node id="6069092939" visible="true" version="1" changeset="64603093" timestamp="2018-11-17T18:32:58Z" user="jqngarcia" uid="5126253" lat="41.3467726" lon="2.1389866"/>
+ <node id="6069092940" visible="true" version="1" changeset="64603093" timestamp="2018-11-17T18:32:58Z" user="jqngarcia" uid="5126253" lat="41.3441790" lon="2.1307468"/>
+ <node id="6069092941" visible="true" version="1" changeset="64603093" timestamp="2018-11-17T18:32:58Z" user="jqngarcia" uid="5126253" lat="41.3358861" lon="2.1010709"/>
+ <node id="6069092942" visible="true" version="3" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3588964" lon="2.0933668"/>
+ <node id="6069092944" visible="true" version="1" changeset="64603093" timestamp="2018-11-17T18:32:58Z" user="jqngarcia" uid="5126253" lat="41.3689073" lon="2.0912124"/>
+ <node id="6069157695" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3636424" lon="2.0892530"/>
+ <node id="6080638154" visible="true" version="2" changeset="187443789" timestamp="2026-08-14T13:44:11Z" user="marcmarti" uid="10355154" lat="41.3622557" lon="2.1354267"/>
+ <node id="6172125562" visible="true" version="5" changeset="188928783" timestamp="2026-09-12T18:15:05Z" user="MarcosdeE" uid="12230027" lat="41.3665456" lon="2.1321951">
+  <tag k="bicycle" v="designated"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:markings" v="dots"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6172126207" visible="true" version="2" changeset="101140916" timestamp="2021-03-16T19:22:59Z" user="Ganondorf Dragmire" uid="12640376" lat="41.3656929" lon="2.1327869">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990470" visible="true" version="4" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3749372" lon="2.1230737">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990472" visible="true" version="8" changeset="180497314" timestamp="2026-03-27T11:41:04Z" user="El-Vikingo" uid="8199025" lat="41.3745666" lon="2.1235514">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="6173990473" visible="true" version="11" changeset="180719606" timestamp="2026-04-01T12:35:05Z" user="El-Vikingo" uid="8199025" lat="41.3741418" lon="2.1238973">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="6173990476" visible="true" version="10" changeset="180497306" timestamp="2026-03-27T11:40:11Z" user="El-Vikingo" uid="8199025" lat="41.3742373" lon="2.1238377">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="6173990477" visible="true" version="5" changeset="160346298" timestamp="2024-12-18T11:25:47Z" user="Tripsix" uid="18763717" lat="41.3736170" lon="2.1242037">
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:markings" v="yes"/>
+  <tag k="crossing:signals" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="no"/>
+ </node>
+ <node id="6173990478" visible="true" version="6" changeset="174035666" timestamp="2025-10-31T19:27:12Z" user="Mapward" uid="6701886" lat="41.3734921" lon="2.1243596">
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:markings" v="no"/>
+  <tag k="crossing:signals" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="6173990480" visible="true" version="3" changeset="114379875" timestamp="2021-11-29T22:44:31Z" user="Toni Serra" uid="3859465" lat="41.3730530" lon="2.1251898">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990481" visible="true" version="4" changeset="174035659" timestamp="2025-10-31T19:28:16Z" user="Mapward" uid="6701886" lat="41.3732271" lon="2.1248672">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="6173990484" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3727355" lon="2.1256784">
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990485" visible="true" version="5" changeset="180639209" timestamp="2026-03-30T16:52:52Z" user="El-Vikingo" uid="8199025" lat="41.3724456" lon="2.1261127">
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:markings" v="yes"/>
+  <tag k="crossing:signals" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="6173990487" visible="true" version="5" changeset="180640171" timestamp="2026-03-30T17:14:54Z" user="El-Vikingo" uid="8199025" lat="41.3721260" lon="2.1265434">
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:signals" v="yes"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+ </node>
+ <node id="6173990492" visible="true" version="7" changeset="180497314" timestamp="2026-03-27T11:19:47Z" user="El-Vikingo" uid="8199025" lat="41.3715485" lon="2.1274333">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="6173990493" visible="true" version="2" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3716325" lon="2.1272970">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990496" visible="true" version="7" changeset="180497314" timestamp="2026-03-27T11:24:33Z" user="El-Vikingo" uid="8199025" lat="41.3705717" lon="2.1293871">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="6173990499" visible="true" version="6" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3700196" lon="2.1300793">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="6173990500" visible="true" version="8" changeset="180497314" timestamp="2026-03-27T11:25:31Z" user="El-Vikingo" uid="8199025" lat="41.3701062" lon="2.1299554">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:signals" v="yes"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="6173990504" visible="true" version="3" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3751500" lon="2.1226268">
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990513" visible="true" version="6" changeset="141750336" timestamp="2023-09-25T22:22:39Z" user="pswsm" uid="20249696" lat="41.3777260" lon="2.1211270">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="6173990514" visible="true" version="2" changeset="115955639" timestamp="2022-01-09T19:44:29Z" user="Toni Serra" uid="3859465" lat="41.3768484" lon="2.1196291">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990516" visible="true" version="2" changeset="115955639" timestamp="2022-01-09T19:44:29Z" user="Toni Serra" uid="3859465" lat="41.3769655" lon="2.1198312">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990522" visible="true" version="4" changeset="187100725" timestamp="2026-08-07T18:01:34Z" user="larajoleraa" uid="21799307" lat="41.3757897" lon="2.1171245">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="6173990525" visible="true" version="4" changeset="187100728" timestamp="2026-08-07T18:01:33Z" user="larajoleraa" uid="21799307" lat="41.3757979" lon="2.1165662">
+  <tag k="crossing" v="traffic_signals;uncontrolled"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990526" visible="true" version="7" changeset="187100725" timestamp="2026-08-07T18:01:32Z" user="larajoleraa" uid="21799307" lat="41.3758128" lon="2.1157672">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:markings" v="dashes"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="6173990528" visible="true" version="4" changeset="144724276" timestamp="2023-12-03T16:14:57Z" user="Toni Serra" uid="3859465" lat="41.3758274" lon="2.1149560">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990529" visible="true" version="5" changeset="144724111" timestamp="2023-12-03T16:10:20Z" user="Toni Serra" uid="3859465" lat="41.3758437" lon="2.1143324">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6173990530" visible="true" version="9" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758620" lon="2.1133925"/>
+ <node id="6173990532" visible="true" version="7" changeset="158130683" timestamp="2024-10-20T14:26:09Z" user="BMUNI" uid="20794378" lat="41.3758833" lon="2.1123186">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="6658845911" visible="true" version="1" changeset="72785584" timestamp="2019-07-29T20:17:54Z" user="caminsperfer" uid="10187213" lat="41.3672862" lon="2.1318672"/>
+ <node id="6710527350" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3588930" lon="2.0956652"/>
+ <node id="6710527351" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3616882" lon="2.0904365"/>
+ <node id="6710527353" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3584397" lon="2.0955232"/>
+ <node id="6710527356" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3558576" lon="2.0971753"/>
+ <node id="6710527358" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3630087" lon="2.0891771"/>
+ <node id="6710527360" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3504903" lon="2.0966988"/>
+ <node id="6710527362" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3633689" lon="2.0892868"/>
+ <node id="6710527363" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3612199" lon="2.0908985"/>
+ <node id="6710527365" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3578087" lon="2.0959265"/>
+ <node id="6710527370" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3571105" lon="2.0963677"/>
+ <node id="6710527371" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3615785" lon="2.0904524"/>
+ <node id="6710527373" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3585576" lon="2.0958588"/>
+ <node id="6710527376" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3590335" lon="2.0954421"/>
+ <node id="6710527378" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3613717" lon="2.0906179"/>
+ <node id="6710527379" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3593707" lon="2.0930358"/>
+ <node id="6710527380" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3636064" lon="2.0893624"/>
+ <node id="6710527381" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3612746" lon="2.0907615"/>
+ <node id="6710527383" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3563209" lon="2.0968700"/>
+ <node id="6710553086" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3569787" lon="2.0964520"/>
+ <node id="6710553088" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3615130" lon="2.0904927"/>
+ <node id="6710553090" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3585254" lon="2.0957683"/>
+ <node id="6710553091" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3618375" lon="2.0902933"/>
+ <node id="6710553092" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3609919" lon="2.0912353"/>
+ <node id="6710553093" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3566910" lon="2.0966306"/>
+ <node id="6710553095" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3609199" lon="2.0914610"/>
+ <node id="6710553096" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3507152" lon="2.0971392"/>
+ <node id="6710553099" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3499052" lon="2.0955679"/>
+ <node id="6710553104" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3576931" lon="2.0959986"/>
+ <node id="6711105807" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3742982" lon="2.1237927"/>
+ <node id="6812815757" visible="true" version="2" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3797286" lon="2.1016108"/>
+ <node id="6812815758" visible="true" version="2" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3780581" lon="2.1029278"/>
+ <node id="6812815759" visible="true" version="2" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3775816" lon="2.1021301"/>
+ <node id="6812815760" visible="true" version="2" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3776257" lon="2.1014248"/>
+ <node id="6812815761" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3775160" lon="2.1010394"/>
+ <node id="6812815762" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3774612" lon="2.1009609"/>
+ <node id="6812815763" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3774682" lon="2.1009522"/>
+ <node id="6812815764" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3774566" lon="2.1009395"/>
+ <node id="6812815765" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3772705" lon="2.1008724"/>
+ <node id="6812815766" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3772192" lon="2.1008255"/>
+ <node id="6812815767" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3770964" lon="2.1007624"/>
+ <node id="6812815768" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3768931" lon="2.1004915"/>
+ <node id="6812815769" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3767442" lon="2.1003856"/>
+ <node id="6812815770" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3766289" lon="2.1003306"/>
+ <node id="6812815771" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3765927" lon="2.1003011"/>
+ <node id="6812815772" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3765112" lon="2.1002769"/>
+ <node id="6812815773" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3764825" lon="2.1002099"/>
+ <node id="6812815774" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3725889" lon="2.1003467"/>
+ <node id="6812815775" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3712393" lon="2.0994321"/>
+ <node id="6812815776" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3742786" lon="2.1011862"/>
+ <node id="6812815777" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3670172" lon="2.0943224"/>
+ <node id="6812815778" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3670927" lon="2.0945424"/>
+ <node id="6812815779" visible="true" version="2" changeset="82198987" timestamp="2020-03-14T17:16:50Z" user="caminsperfer" uid="10187213" lat="41.3674726" lon="2.0954724"/>
+ <node id="6812815780" visible="true" version="2" changeset="82198987" timestamp="2020-03-14T17:16:50Z" user="caminsperfer" uid="10187213" lat="41.3674258" lon="2.0955254"/>
+ <node id="6812815781" visible="true" version="2" changeset="82198987" timestamp="2020-03-14T17:16:50Z" user="caminsperfer" uid="10187213" lat="41.3675174" lon="2.0954087"/>
+ <node id="6812815782" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3677581" lon="2.0966225"/>
+ <node id="6812815783" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3676935" lon="2.0966660"/>
+ <node id="6812815784" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3675912" lon="2.0963039"/>
+ <node id="6812844285" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3678000" lon="2.0966191"/>
+ <node id="6812844286" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3679451" lon="2.0968639"/>
+ <node id="6812844287" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3679657" lon="2.0968856"/>
+ <node id="6812844288" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3678872" lon="2.0968773"/>
+ <node id="6812844289" visible="true" version="2" changeset="76271874" timestamp="2019-10-27T17:36:50Z" user="caminsperfer" uid="10187213" lat="41.3684119" lon="2.0988694"/>
+ <node id="6812844290" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3684047" lon="2.0988716"/>
+ <node id="6812844291" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3683487" lon="2.0982156"/>
+ <node id="6812844292" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3683093" lon="2.0982209"/>
+ <node id="6812844293" visible="true" version="2" changeset="81310501" timestamp="2020-02-21T09:32:05Z" user="caminsperfer" uid="10187213" lat="41.3682873" lon="2.0978797"/>
+ <node id="6812844294" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3684312" lon="2.0990202"/>
+ <node id="6812844295" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3685897" lon="2.0989828"/>
+ <node id="6812844296" visible="true" version="1" changeset="74731338" timestamp="2019-09-20T18:13:52Z" user="Santi2222" uid="493192" lat="41.3686303" lon="2.0990119"/>
+ <node id="6920381204" visible="true" version="2" changeset="160263555" timestamp="2024-12-13T22:16:15Z" user="MarcosdeE" uid="12230027" lat="41.3682930" lon="2.0979391"/>
+ <node id="6985513763" visible="true" version="1" changeset="77197607" timestamp="2019-11-17T19:19:22Z" user="yopaseopor" uid="500572" lat="41.3600408" lon="2.1335041"/>
+ <node id="7012543129" visible="true" version="1" changeset="77598482" timestamp="2019-11-26T22:31:37Z" user="Toni Serra" uid="3859465" lat="41.3657140" lon="2.1327722">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="7021902489" visible="true" version="5" changeset="188928783" timestamp="2026-09-12T18:15:05Z" user="MarcosdeE" uid="12230027" lat="41.3669529" lon="2.1319753">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:markings" v="zebra"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="no"/>
+ </node>
+ <node id="7021902498" visible="true" version="4" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977" lat="41.3707066" lon="2.1292141">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="7021902502" visible="true" version="10" changeset="180497306" timestamp="2026-03-27T11:21:35Z" user="El-Vikingo" uid="8199025" lat="41.3710832" lon="2.1284597">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:signals" v="yes"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="7021902510" visible="true" version="6" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977" lat="41.3712681" lon="2.1279465">
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:markings" v="yes"/>
+  <tag k="crossing:signals" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="7021902512" visible="true" version="2" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977" lat="41.3713519" lon="2.1277890"/>
+ <node id="7021902522" visible="true" version="1" changeset="77761747" timestamp="2019-11-30T16:22:48Z" user="yopaseopor" uid="500572" lat="41.3719716" lon="2.1267967">
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="7021902535" visible="true" version="1" changeset="77761747" timestamp="2019-11-30T16:22:48Z" user="yopaseopor" uid="500572" lat="41.3729073" lon="2.1254275"/>
+ <node id="7021902544" visible="true" version="2" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977" lat="41.3731162" lon="2.1250794"/>
+ <node id="7051126078" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3497612" lon="2.0952857"/>
+ <node id="7051170953" visible="true" version="1" changeset="78298944" timestamp="2019-12-12T06:34:43Z" user="caminsperfer" uid="10187213" lat="41.3674372" lon="2.0955586"/>
+ <node id="7051174500" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3615270" lon="2.0904841"/>
+ <node id="7052720028" visible="true" version="1" changeset="78332544" timestamp="2019-12-12T18:00:49Z" user="user_177389" uid="177389" lat="41.3353411" lon="2.1029193"/>
+ <node id="7221370979" visible="true" version="2" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3698115" lon="2.1303374">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="7438788528" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3418316" lon="2.0899675"/>
+ <node id="7438788529" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3423746" lon="2.0903616"/>
+ <node id="7438788530" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3432852" lon="2.0909447"/>
+ <node id="7438788531" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3437348" lon="2.0911812"/>
+ <node id="7438788532" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3441668" lon="2.0913946"/>
+ <node id="7438788533" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3446741" lon="2.0916053"/>
+ <node id="7438788534" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3454645" lon="2.0918976"/>
+ <node id="7438788535" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3462271" lon="2.0920905"/>
+ <node id="7438788536" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3468035" lon="2.0921931"/>
+ <node id="7438788537" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3472073" lon="2.0922517"/>
+ <node id="7438788538" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3496419" lon="2.0950518"/>
+ <node id="7438788539" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3637419" lon="2.0889505"/>
+ <node id="7438788540" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3638985" lon="2.0884772"/>
+ <node id="7438788541" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3640551" lon="2.0880075"/>
+ <node id="7438788542" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3640989" lon="2.0878575"/>
+ <node id="7438788543" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3641690" lon="2.0876030"/>
+ <node id="7438788544" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3641839" lon="2.0875538"/>
+ <node id="7438788545" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3642145" lon="2.0874398"/>
+ <node id="7438788546" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3642571" lon="2.0873614"/>
+ <node id="7438788547" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3642927" lon="2.0872988"/>
+ <node id="7438788548" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3643069" lon="2.0872771"/>
+ <node id="7438788549" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3643537" lon="2.0872656"/>
+ <node id="7438788550" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3644137" lon="2.0872242"/>
+ <node id="7438788551" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3644253" lon="2.0872132"/>
+ <node id="7438788552" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3644476" lon="2.0871890"/>
+ <node id="7438788553" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3645267" lon="2.0870516"/>
+ <node id="7438788554" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3645312" lon="2.0870503"/>
+ <node id="7438788555" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3645833" lon="2.0870293"/>
+ <node id="7438788556" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3646201" lon="2.0870156"/>
+ <node id="7438788557" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3646902" lon="2.0869931"/>
+ <node id="7438788558" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3647558" lon="2.0869814"/>
+ <node id="7438788559" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3648855" lon="2.0869796"/>
+ <node id="7438788560" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3653872" lon="2.0869738"/>
+ <node id="7438788561" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3654638" lon="2.0869727"/>
+ <node id="7438788562" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3657082" lon="2.0867888"/>
+ <node id="7438788564" visible="true" version="2" changeset="113177998" timestamp="2021-10-31T01:36:48Z" user="friguron" uid="843351" lat="41.3658083" lon="2.0868003"/>
+ <node id="7438788565" visible="true" version="1" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192" lat="41.3658416" lon="2.0867941"/>
+ <node id="7589389892" visible="true" version="1" changeset="86135532" timestamp="2020-06-03T12:10:29Z" user="Santi2222" uid="493192" lat="41.3695589" lon="2.1305695"/>
+ <node id="7589389893" visible="true" version="3" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3700099" lon="2.1300922"/>
+ <node id="7589389896" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3698901" lon="2.1302483"/>
+ <node id="7589389901" visible="true" version="1" changeset="86135532" timestamp="2020-06-03T12:10:29Z" user="Santi2222" uid="493192" lat="41.3698026" lon="2.1303486"/>
+ <node id="7589389909" visible="true" version="2" changeset="185033477" timestamp="2026-07-03T11:02:58Z" user="marcmarti" uid="10355154" lat="41.3696925" lon="2.1304477"/>
+ <node id="7589389910" visible="true" version="1" changeset="86135532" timestamp="2020-06-03T12:10:29Z" user="Santi2222" uid="493192" lat="41.3696725" lon="2.1304665"/>
+ <node id="8144185786" visible="true" version="2" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3705355" lon="2.1294272">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="8144185795" visible="true" version="2" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3701339" lon="2.1299200">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="8148262712" visible="true" version="1" changeset="94535596" timestamp="2020-11-21T08:40:52Z" user="yopaseopor" uid="500572" lat="41.3748543" lon="2.1232299"/>
+ <node id="8148262716" visible="true" version="3" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3749526" lon="2.1230373">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="8148294117" visible="true" version="2" changeset="144052121" timestamp="2023-11-15T13:31:16Z" user="MacLondon" uid="322039" lat="41.3748010" lon="2.1232973">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="8170883311" visible="true" version="3" changeset="173738362" timestamp="2025-10-24T23:36:34Z" user="kapazao_import" uid="8770019" lat="41.3725719" lon="2.1259216">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Riera Blanca - Sant Frederic"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="3654"/>
+  <tag k="route_ref" v="V1"/>
+ </node>
+ <node id="8170883312" visible="true" version="3" changeset="173738362" timestamp="2025-10-24T23:36:34Z" user="kapazao_import" uid="8770019" lat="41.3711785" lon="2.1281834">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Riera Blanca - Pavia"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="3653"/>
+  <tag k="route_ref" v="V1 LH2"/>
+ </node>
+ <node id="8170883313" visible="true" version="6" changeset="182739542" timestamp="2026-05-16T12:14:00Z" user="ivanruiz" uid="23829548" lat="41.3678894" lon="2.1316488">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Riera Blanca - Santa Eulàlia"/>
+  <tag k="name:ca" v="Riera Blanca - Santa Eulàlia"/>
+  <tag k="network" v="AMB Bus Metropolità"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="operator:short" v="AMB"/>
+  <tag k="operator:type" v="government"/>
+  <tag k="operator:wikidata" v="Q249489"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="3718"/>
+  <tag k="route_ref" v="V1"/>
+ </node>
+ <node id="8170952757" visible="true" version="8" changeset="182739542" timestamp="2026-05-16T12:14:00Z" user="ivanruiz" uid="23829548" lat="41.3677758" lon="2.1316979">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Riera Blanca - Santa Eulàlia"/>
+  <tag k="name:ca" v="Riera Blanca - Santa Eulàlia"/>
+  <tag k="network" v="AMB Bus Metropolità"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="operator:short" v="AMB"/>
+  <tag k="operator:type" v="government"/>
+  <tag k="operator:wikidata" v="Q249489"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="3700"/>
+  <tag k="route_ref" v="L52;L82;L85;V1"/>
+ </node>
+ <node id="8170952758" visible="true" version="9" changeset="182739542" timestamp="2026-05-16T12:14:00Z" user="ivanruiz" uid="23829548" lat="41.3692280" lon="2.1308294">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Metro Santa Eulàlia"/>
+  <tag k="name:ca" v="Metro Santa Eulàlia"/>
+  <tag k="network" v="AMB Bus Metropolità"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="operator:short" v="AMB"/>
+  <tag k="operator:type" v="public"/>
+  <tag k="operator:wikidata" v="Q249489"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="3651"/>
+  <tag k="route_ref" v="V1;LH1"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="8170952759" visible="true" version="5" changeset="173738362" timestamp="2025-10-24T23:36:34Z" user="kapazao_import" uid="8770019" lat="41.3709082" lon="2.1288286">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Riera Blanca - Congost"/>
+  <tag k="name:ca" v="Riera Blanca - Congost"/>
+  <tag k="network" v="AMB Bus Metropolità"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="003650"/>
+  <tag k="route_ref" v="V1"/>
+  <tag k="url" v="https://www.ambmobilitat.cat/Principales/DatosParada.aspx?cerca=1&amp;CodParada=003650"/>
+ </node>
+ <node id="8170952760" visible="true" version="6" changeset="173738362" timestamp="2025-10-24T23:36:34Z" user="kapazao_import" uid="8770019" lat="41.3723427" lon="2.1262527">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Riera Blanca - Rambla Catalana"/>
+  <tag k="name:ca" v="Riera Blanca - Rambla Catalana"/>
+  <tag k="network" v="AMB Bus Metropolità"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="003648"/>
+  <tag k="route_ref" v="V1"/>
+  <tag k="url" v="https://www.ambmobilitat.cat/Principales/DatosParada.aspx?cerca=1&amp;CodParada=003648"/>
+ </node>
+ <node id="8170952761" visible="true" version="7" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3750069" lon="2.1229237">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Riera Blanca - Plaça Guernica"/>
+  <tag k="name:ca" v="Riera Blanca - Plaça Guernica"/>
+  <tag k="network" v="AMB Bus Metropolità"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="003647"/>
+  <tag k="route_ref" v="LH1 V1 M12 N2"/>
+  <tag k="url" v="https://www.ambmobilitat.cat/Principales/DatosParada.aspx?cerca=1&amp;CodParada=003647"/>
+ </node>
+ <node id="8214252239" visible="true" version="1" changeset="95628648" timestamp="2020-12-10T16:10:33Z" user="user_177389" uid="177389" lat="41.3759593" lon="2.1095536"/>
+ <node id="8264420314" visible="true" version="1" changeset="96490625" timestamp="2020-12-27T16:29:52Z" user="Toni Serra" uid="3859465" lat="41.3754310" lon="2.1220181"/>
+ <node id="8264420315" visible="true" version="2" changeset="144183018" timestamp="2023-11-18T17:06:34Z" user="MacLondon" uid="322039" lat="41.3755715" lon="2.1218031">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="8361399868" visible="true" version="6" changeset="172071916" timestamp="2025-09-17T15:31:20Z" user="MarcosdeE" uid="12230027" lat="41.3758367" lon="2.1145986">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Collblanc - Cardenal Reig"/>
+  <tag k="name:ca" v="Collblanc - Cardenal Reig"/>
+  <tag k="network" v="Autoritat del Transport Metropolità de l'Àrea de Barcelona"/>
+  <tag k="network:bus" v="AMB Bus Metropolità"/>
+  <tag k="network:guid" v="ES-CT-ATMB"/>
+  <tag k="network:short" v="ATM"/>
+  <tag k="network:wikidata" v="Q1845633"/>
+  <tag k="network:wikipedia" v="https://ca.wikipedia.org/wiki/Autoritat_del_Transport_Metropolit%C3%A0_de_l%27%C3%80rea_de_Barcelona"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="000831"/>
+  <tag k="route_ref" v="157 N14 N28"/>
+  <tag k="url" v="https://www.ambmobilitat.cat/Principales/DatosParada.aspx?cerca=1&amp;CodParada=000831"/>
+ </node>
+ <node id="8374788338" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3750589" lon="2.1228118"/>
+ <node id="8374788339" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3752259" lon="2.1224236"/>
+ <node id="8374788340" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3752509" lon="2.1223595"/>
+ <node id="8408042208" visible="true" version="9" changeset="182739542" timestamp="2026-05-16T12:14:00Z" user="ivanruiz" uid="23829548" lat="41.3662962" lon="2.1323639">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Pl. Sant Isidre"/>
+  <tag k="name:ca" v="Pl. Sant Isidre"/>
+  <tag k="network" v="AMB Bus Metropolità"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="operator:short" v="AMB"/>
+  <tag k="operator:type" v="government"/>
+  <tag k="operator:wikidata" v="Q249489"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="109190"/>
+  <tag k="route_ref" v="902;L52;N13"/>
+ </node>
+ <node id="9211960165" visible="true" version="1" changeset="113156427" timestamp="2021-10-30T10:59:00Z" user="UnGeograf" uid="601515" lat="41.3761725" lon="2.1001304"/>
+ <node id="9291257912" visible="true" version="2" changeset="135270620" timestamp="2023-04-23T17:11:28Z" user="MarcosdeE" uid="12230027" lat="41.3685806" lon="2.1312686"/>
+ <node id="9294726232" visible="true" version="1" changeset="114379875" timestamp="2021-11-29T22:44:31Z" user="Toni Serra" uid="3859465" lat="41.3730401" lon="2.1252108">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="9294726235" visible="true" version="2" changeset="174035659" timestamp="2025-10-31T19:27:47Z" user="Mapward" uid="6701886" lat="41.3732416" lon="2.1248394">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="9397877115" visible="true" version="2" changeset="134945811" timestamp="2023-04-15T15:44:41Z" user="Toni Serra" uid="3859465" lat="41.3759053" lon="2.1112954">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="9397904771" visible="true" version="2" changeset="172447691" timestamp="2025-09-25T16:13:16Z" user="Marion_Moseby" uid="5379200" lat="41.3758994" lon="2.1180300">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="kerb" v="lowered"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="9397904776" visible="true" version="2" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3757893" lon="2.1171522"/>
+ <node id="9397904782" visible="true" version="1" changeset="115856110" timestamp="2022-01-06T22:33:12Z" user="Toni Serra" uid="3859465" lat="41.3757973" lon="2.1166071">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="9397904783" visible="true" version="1" changeset="115856110" timestamp="2022-01-06T22:33:12Z" user="Toni Serra" uid="3859465" lat="41.3758042" lon="2.1162212">
+  <tag k="maxspeed" v="30"/>
+  <tag k="traffic_sign" v="maxspeed"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="9397904784" visible="true" version="1" changeset="115856110" timestamp="2022-01-06T22:33:12Z" user="Toni Serra" uid="3859465" lat="41.3758018" lon="2.1163378">
+  <tag k="crossing" v="no"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="9397904785" visible="true" version="3" changeset="144566073" timestamp="2023-11-28T21:40:25Z" user="yopaseopor" uid="500572" lat="41.3758228" lon="2.1151967">
+  <tag k="direction" v="backward"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="traffic_sign" v="maxspeed"/>
+ </node>
+ <node id="9397904788" visible="true" version="1" changeset="115856110" timestamp="2022-01-06T22:33:12Z" user="Toni Serra" uid="3859465" lat="41.3758406" lon="2.1144490">
+  <tag k="maxspeed" v="30"/>
+  <tag k="traffic_sign" v="maxspeed"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="9397904790" visible="true" version="2" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758426" lon="2.1143739">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="9397904791" visible="true" version="1" changeset="115856110" timestamp="2022-01-06T22:33:12Z" user="Toni Serra" uid="3859465" lat="41.3758532" lon="2.1138935">
+  <tag k="crossing" v="no"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="9397904792" visible="true" version="1" changeset="115856110" timestamp="2022-01-06T22:33:12Z" user="Toni Serra" uid="3859465" lat="41.3758577" lon="2.1136862">
+  <tag k="crossing" v="no"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="9397904793" visible="true" version="8" changeset="158130683" timestamp="2024-10-20T14:24:21Z" user="BMUNI" uid="20794378" lat="41.3758627" lon="2.1133522">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="9397904794" visible="true" version="6" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758753" lon="2.1127046">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="9397904795" visible="true" version="2" changeset="174064590" timestamp="2025-11-01T14:15:30Z" user="MacLondon" uid="322039" lat="41.3758965" lon="2.1116741">
+  <tag k="maxspeed" v="30"/>
+  <tag k="traffic_sign" v="maxspeed"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="9405618751" visible="true" version="2" changeset="141750336" timestamp="2023-09-25T22:22:39Z" user="pswsm" uid="20249696" lat="41.3777127" lon="2.1211033">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="pedestrian_crossing"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="9405618752" visible="true" version="2" changeset="149674389" timestamp="2024-04-06T23:16:16Z" user="yopaseopor" uid="500572" lat="41.3763075" lon="2.1187306">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="9876300964" visible="true" version="3" changeset="187357340" timestamp="2026-08-12T19:21:38Z" user="marcmarti" uid="10355154" lat="41.3757257" lon="2.1217539"/>
+ <node id="9935693347" visible="true" version="7" changeset="180497306" timestamp="2026-03-27T11:39:41Z" user="El-Vikingo" uid="8199025" lat="41.3741205" lon="2.1239098">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="9935693348" visible="true" version="7" changeset="180497306" timestamp="2026-03-27T11:40:08Z" user="El-Vikingo" uid="8199025" lat="41.3742582" lon="2.1238223">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="9935693349" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3745842" lon="2.1235321">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="10130509466" visible="true" version="1" changeset="128088823" timestamp="2022-10-26T14:54:35Z" user="MacLondon" uid="322039" lat="41.3637620" lon="2.1336021"/>
+ <node id="10764781605" visible="true" version="7" changeset="158130683" timestamp="2024-10-20T14:24:55Z" user="BMUNI" uid="20794378" lat="41.3758759" lon="2.1126740">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="10814722755" visible="true" version="5" changeset="158130683" timestamp="2024-10-20T14:26:05Z" user="BMUNI" uid="20794378" lat="41.3758842" lon="2.1122771">
+  <tag k="button_operated" v="no"/>
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+  <tag k="traffic_signals:sound" v="no"/>
+  <tag k="traffic_signals:vibration" v="no"/>
+ </node>
+ <node id="10814722758" visible="true" version="1" changeset="134945546" timestamp="2023-04-15T15:37:24Z" user="Toni Serra" uid="3859465" lat="41.3758644" lon="2.1132645">
+  <tag k="maxspeed" v="30"/>
+  <tag k="traffic_sign" v="maxspeed"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="10814755750" visible="true" version="1" changeset="134945811" timestamp="2023-04-15T15:44:41Z" user="Toni Serra" uid="3859465" lat="41.3758856" lon="2.1122150">
+  <tag k="maxspeed" v="30"/>
+  <tag k="traffic_sign" v="maxspeed"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="10828255587" visible="true" version="4" changeset="188928783" timestamp="2026-09-12T18:15:05Z" user="MarcosdeE" uid="12230027" lat="41.3683267" lon="2.1314272">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:markings" v="zebra"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="10828255590" visible="true" version="2" changeset="188928783" timestamp="2026-09-12T18:15:05Z" user="MarcosdeE" uid="12230027" lat="41.3680650" lon="2.1315647">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:markings" v="dots"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="10837253552" visible="true" version="1" changeset="135305143" timestamp="2023-04-24T14:30:35Z" user="MarcosdeE" uid="12230027" lat="41.3693459" lon="2.1307393">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="11218778225" visible="true" version="3" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3777549" lon="2.1211698"/>
+ <node id="11351350296" visible="true" version="2" changeset="173977051" timestamp="2025-10-30T13:37:28Z" user="MacLondon" uid="322039" lat="41.3666141" lon="2.1321518"/>
+ <node id="11464402849" visible="true" version="2" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758265" lon="2.1149993">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="11464402850" visible="true" version="2" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758283" lon="2.1149223">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="11781563940" visible="true" version="2" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758113" lon="2.1158135">
+  <tag k="direction" v="forward"/>
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="11781563941" visible="true" version="1" changeset="149500809" timestamp="2024-04-02T22:21:03Z" user="pswsm" uid="20249696" lat="41.3758137" lon="2.1157146">
+  <tag k="direction" v="backward"/>
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="11887783415" visible="true" version="1" changeset="151031941" timestamp="2024-05-07T23:22:32Z" user="pswsm" uid="20249696" lat="41.3740236" lon="2.1239663"/>
+ <node id="11887783416" visible="true" version="1" changeset="151031941" timestamp="2024-05-07T23:22:32Z" user="pswsm" uid="20249696" lat="41.3734115" lon="2.1245139"/>
+ <node id="12060295417" visible="true" version="1" changeset="154079136" timestamp="2024-07-18T00:26:05Z" user="pswsm" uid="20249696" lat="41.3758865" lon="2.1121748"/>
+ <node id="12060295424" visible="true" version="1" changeset="154079136" timestamp="2024-07-18T00:26:05Z" user="pswsm" uid="20249696" lat="41.3758899" lon="2.1120188"/>
+ <node id="12291991685" visible="true" version="5" changeset="172216761" timestamp="2025-09-20T17:51:59Z" user="MarcosdeE" uid="12230027" lat="41.3757838" lon="2.1175008">
+  <tag k="bus" v="yes"/>
+  <tag k="name" v="Collblanc - Sant Ramon Nonat"/>
+  <tag k="name:ca" v="Collblanc - Sant Ramon Nonat"/>
+  <tag k="network" v="Autoritat del Transport Metropolità de l'Àrea de Barcelona"/>
+  <tag k="network:bus" v="AMB Bus Metropolità"/>
+  <tag k="network:guid" v="ES-CT-ATMB"/>
+  <tag k="network:short" v="ATM"/>
+  <tag k="network:wikidata" v="Q1845633"/>
+  <tag k="network:wikipedia" v="https://ca.wikipedia.org/wiki/Autoritat_del_Transport_Metropolit%C3%A0_de_l%27%C3%80rea_de_Barcelona"/>
+  <tag k="operator" v="Àrea Metropolitana de Barcelona"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="ref" v="112526"/>
+  <tag k="route_ref" v="LH2"/>
+  <tag k="url" v="https://www.ambmobilitat.cat/Principales/DatosParada.aspx?cerca=1&amp;CodParada=112526"/>
+ </node>
+ <node id="12381896137" visible="true" version="1" changeset="159690625" timestamp="2024-11-28T08:29:28Z" user="jejo mo" uid="3283858" lat="41.3689274" lon="2.0875806"/>
+ <node id="12421649254" visible="true" version="1" changeset="160263555" timestamp="2024-12-13T22:16:15Z" user="MarcosdeE" uid="12230027" lat="41.3682971" lon="2.0979694"/>
+ <node id="12421649255" visible="true" version="1" changeset="160263555" timestamp="2024-12-13T22:16:15Z" user="MarcosdeE" uid="12230027" lat="41.3682889" lon="2.0978940"/>
+ <node id="12919684464" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3768148" lon="2.1195732">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="12919684466" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3769832" lon="2.1198626">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="12919684468" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3757901" lon="2.1170953">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="12919684470" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758446" lon="2.1143048"/>
+ <node id="12919684471" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758634" lon="2.1133174">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="12919684472" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758501" lon="2.1141260"/>
+ <node id="12919684474" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535" lat="41.3758679" lon="2.1130807"/>
+ <node id="12919807301" visible="true" version="1" changeset="167705912" timestamp="2025-06-16T17:46:52Z" user="MarcosdeE" uid="12230027" lat="41.3758993" lon="2.1115871"/>
+ <node id="13267266301" visible="true" version="1" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3693272" lon="2.1307532">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="13267266302" visible="true" version="1" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3698380" lon="2.1303103">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="13267266305" visible="true" version="1" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3697888" lon="2.1303611">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="13267266312" visible="true" version="1" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3710941" lon="2.1284281">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="13267266313" visible="true" version="1" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3709660" lon="2.1287186">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="13267266321" visible="true" version="1" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3710386" lon="2.1285819"/>
+ <node id="13267266323" visible="true" version="1" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3715262" lon="2.1274753">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="13267266324" visible="true" version="1" changeset="173934936" timestamp="2025-10-29T15:12:42Z" user="MacLondon" uid="322039" lat="41.3716517" lon="2.1272692">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="13274010919" visible="true" version="1" changeset="174064590" timestamp="2025-11-01T14:15:30Z" user="MacLondon" uid="322039" lat="41.3759047" lon="2.1113268">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="13274010974" visible="true" version="1" changeset="174064590" timestamp="2025-11-01T14:15:30Z" user="MacLondon" uid="322039" lat="41.3758906" lon="2.1119796"/>
+ <node id="13834492099" visible="true" version="1" changeset="182739542" timestamp="2026-05-16T12:14:00Z" user="ivanruiz" uid="23829548" lat="41.3666447" lon="2.1321307">
+  <tag k="direction" v="forward"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="road_marking" v="traffic_sign"/>
+  <tag k="traffic_sign" v="maxspeed"/>
+ </node>
+ <node id="13861123064" visible="true" version="1" changeset="183036364" timestamp="2026-05-22T18:20:56Z" user="MarcosdeE" uid="12230027" lat="41.3773845" lon="2.1205348"/>
+ <node id="14046345890" visible="true" version="1" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977" lat="41.3706779" lon="2.1292587"/>
+ <node id="14058411274" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3780644" lon="2.1081215"/>
+ <node id="14058411275" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3783252" lon="2.1077359"/>
+ <node id="14058411276" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3782004" lon="2.1077447"/>
+ <node id="14058411277" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3781581" lon="2.1077767"/>
+ <node id="14058411278" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3781183" lon="2.1078903"/>
+ <node id="14058411279" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3783924" lon="2.1075432"/>
+ <node id="14058411280" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3784368" lon="2.1074155"/>
+ <node id="14058411281" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3785443" lon="2.1071133"/>
+ <node id="14058411282" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3787637" lon="2.1069227"/>
+ <node id="14058411283" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3790970" lon="2.1061920"/>
+ <node id="14058411284" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3789687" lon="2.1062739"/>
+ <node id="14058411285" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3788923" lon="2.1063859"/>
+ <node id="14058411286" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3788793" lon="2.1066411"/>
+ <node id="14058411287" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3788154" lon="2.1068555"/>
+ <node id="14058411288" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3791603" lon="2.1059941"/>
+ <node id="14058411289" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3792756" lon="2.1058513"/>
+ <node id="14058411290" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3793576" lon="2.1057920"/>
+ <node id="14058411291" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3797197" lon="2.1043655"/>
+ <node id="14058411292" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3794477" lon="2.1050741"/>
+ <node id="14058411293" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3794543" lon="2.1055452"/>
+ <node id="14058411294" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3794463" lon="2.1056615"/>
+ <node id="14058411295" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3794188" lon="2.1057262"/>
+ <node id="14058411296" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3802905" lon="2.1030283"/>
+ <node id="14058411297" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3802909" lon="2.1031775"/>
+ <node id="14058411298" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3802627" lon="2.1033545"/>
+ <node id="14058411299" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3802219" lon="2.1035153"/>
+ <node id="14058411300" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3801761" lon="2.1036577"/>
+ <node id="14058464301" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3801133" lon="2.1037956"/>
+ <node id="14058464302" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3799955" lon="2.1039853"/>
+ <node id="14058464303" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3794305" lon="2.1047601"/>
+ <node id="14058464304" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3801717" lon="2.1024985"/>
+ <node id="14058464305" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3799859" lon="2.1021252"/>
+ <node id="14058464306" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3794091" lon="2.1015113"/>
+ <node id="14058464307" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3792698" lon="2.1016295"/>
+ <node id="14058464308" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3789009" lon="2.1017731"/>
+ <node id="14058464309" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3776779" lon="2.1025593"/>
+ <node id="14058464310" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3776336" lon="2.1021164"/>
+ <node id="14058464311" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3775241" lon="2.1012522"/>
+ <node id="14058464312" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3775264" lon="2.1011907"/>
+ <node id="14058464313" visible="true" version="1" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154" lat="41.3775051" lon="2.1011598"/>
+ <node id="14069055359" visible="true" version="1" changeset="186833877" timestamp="2026-08-02T20:18:11Z" user="Monolo23" uid="17519482" lat="41.3766240" lon="2.1192563"/>
+ <node id="14094583040" visible="true" version="1" changeset="187443789" timestamp="2026-08-14T13:44:11Z" user="marcmarti" uid="10355154" lat="41.3613334" lon="2.1348602"/>
+ <node id="14094583041" visible="true" version="1" changeset="187443789" timestamp="2026-08-14T13:44:11Z" user="marcmarti" uid="10355154" lat="41.3614480" lon="2.1349514"/>
+ <node id="14094583042" visible="true" version="1" changeset="187443789" timestamp="2026-08-14T13:44:11Z" user="marcmarti" uid="10355154" lat="41.3616822" lon="2.1350947"/>
+ <node id="14094583043" visible="true" version="1" changeset="187443789" timestamp="2026-08-14T13:44:11Z" user="marcmarti" uid="10355154" lat="41.3620886" lon="2.1353262"/>
+ <node id="14126984922" visible="true" version="1" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154" lat="41.3669748" lon="2.1319684">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="14126984923" visible="true" version="1" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154" lat="41.3665188" lon="2.1322135">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="14126984925" visible="true" version="1" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154" lat="41.3663131" lon="2.1323529">
+  <tag k="direction" v="backward"/>
+  <tag k="highway" v="stop"/>
+ </node>
+ <node id="14126984927" visible="true" version="1" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154" lat="41.3680404" lon="2.1315765">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="14126984930" visible="true" version="1" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154" lat="41.3683630" lon="2.1314045">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="forward"/>
+ </node>
+ <node id="14127037807" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3699507" lon="2.1301747"/>
+ <node id="14127037808" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535" lat="41.3758284" lon="2.1178199"/>
+ <node id="14127037809" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535" lat="41.3757832" lon="2.1175638"/>
+ <node id="14127037810" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535" lat="41.3779436" lon="2.1213963"/>
+ <node id="14127037811" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535" lat="41.3776695" lon="2.1215314"/>
+ <node id="14127037812" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535" lat="41.3774005" lon="2.1216407"/>
+ <node id="14127037813" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535" lat="41.3769746" lon="2.1216448"/>
+ <node id="14127037814" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535" lat="41.3766536" lon="2.1216334"/>
+ <node id="14127037815" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535" lat="41.3761026" lon="2.1216193"/>
+ <node id="14127222578" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3751760" lon="2.1225732"/>
+ <node id="14127222579" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3751936" lon="2.1225266"/>
+ <node id="14127222580" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3752115" lon="2.1224702"/>
+ <node id="14127222581" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3752835" lon="2.1222889"/>
+ <node id="14127222582" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3745419" lon="2.1235743">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="traffic_signals" v="signal"/>
+  <tag k="traffic_signals:direction" v="backward"/>
+ </node>
+ <node id="14127222583" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3743637" lon="2.1237418"/>
+ <node id="14127222584" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3744303" lon="2.1236811"/>
+ <node id="14127248707" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3699224" lon="2.1302105"/>
+ <node id="14127248708" visible="true" version="1" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154" lat="41.3699755" lon="2.1301408"/>
+ <way id="23804347" visible="true" version="29" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="30236813"/>
+  <nd ref="6173990487"/>
+  <nd ref="340197288"/>
+  <nd ref="7021902522"/>
+  <nd ref="3618456748"/>
+  <nd ref="13267266324"/>
+  <nd ref="6173990493"/>
+  <nd ref="262988804"/>
+  <nd ref="6173990492"/>
+  <nd ref="13267266323"/>
+  <nd ref="7021902512"/>
+  <nd ref="7021902510"/>
+  <nd ref="2013654036"/>
+  <nd ref="8170883312"/>
+  <nd ref="13267266312"/>
+  <nd ref="7021902502"/>
+  <nd ref="2013654035"/>
+  <nd ref="13267266321"/>
+  <nd ref="13267266313"/>
+  <nd ref="8170952759"/>
+  <nd ref="7021902498"/>
+  <nd ref="14046345890"/>
+  <nd ref="2013654034"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="24287433" visible="true" version="34" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154">
+  <nd ref="8374788339"/>
+  <nd ref="14127222580"/>
+  <nd ref="14127222579"/>
+  <nd ref="14127222578"/>
+  <nd ref="6173990504"/>
+  <nd ref="8374788338"/>
+  <nd ref="8170952761"/>
+  <nd ref="8148262716"/>
+  <nd ref="6173990470"/>
+  <nd ref="1560611125"/>
+  <nd ref="8148262712"/>
+  <nd ref="251543584"/>
+  <tag k="bus" v="yes"/>
+  <tag k="disabled" v="yes"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="designated"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="45319704" visible="true" version="13" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154">
+  <nd ref="575789376"/>
+  <nd ref="14058464304"/>
+  <nd ref="14058464305"/>
+  <nd ref="6812815757"/>
+  <nd ref="14058464306"/>
+  <nd ref="14058464307"/>
+  <nd ref="14058464308"/>
+  <nd ref="6812815758"/>
+  <nd ref="14058464309"/>
+  <nd ref="14058464310"/>
+  <nd ref="6812815759"/>
+  <nd ref="6812815760"/>
+  <nd ref="14058464311"/>
+  <nd ref="14058464312"/>
+  <nd ref="14058464313"/>
+  <nd ref="6812815761"/>
+  <nd ref="6812815762"/>
+  <nd ref="6812815763"/>
+  <nd ref="6812815764"/>
+  <nd ref="6812815765"/>
+  <nd ref="6812815766"/>
+  <nd ref="6812815767"/>
+  <nd ref="6812815768"/>
+  <nd ref="6812815769"/>
+  <nd ref="6812815770"/>
+  <nd ref="6812815771"/>
+  <nd ref="6812815772"/>
+  <nd ref="6812815773"/>
+  <nd ref="575789381"/>
+  <nd ref="9211960165"/>
+  <nd ref="3004013785"/>
+  <nd ref="6812815776"/>
+  <nd ref="3004013783"/>
+  <nd ref="6812815774"/>
+  <nd ref="6812815775"/>
+  <nd ref="575789386"/>
+  <nd ref="30584105"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="45371370" visible="true" version="4" changeset="64603093" timestamp="2018-11-17T18:33:01Z" user="jqngarcia" uid="5126253">
+  <nd ref="575788698"/>
+  <nd ref="576936636"/>
+  <nd ref="576936637"/>
+  <nd ref="576936638"/>
+  <nd ref="6069092941"/>
+  <nd ref="576936641"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="45371371" visible="true" version="32" changeset="186576880" timestamp="2026-07-29T10:53:17Z" user="marcmarti" uid="10355154">
+  <nd ref="575789376"/>
+  <nd ref="14058411296"/>
+  <nd ref="14058411297"/>
+  <nd ref="14058411298"/>
+  <nd ref="14058411299"/>
+  <nd ref="14058411300"/>
+  <nd ref="14058464301"/>
+  <nd ref="14058464302"/>
+  <nd ref="14058411291"/>
+  <nd ref="14058464303"/>
+  <nd ref="14058411292"/>
+  <nd ref="14058411293"/>
+  <nd ref="14058411294"/>
+  <nd ref="14058411295"/>
+  <nd ref="14058411290"/>
+  <nd ref="14058411289"/>
+  <nd ref="14058411288"/>
+  <nd ref="2013654053"/>
+  <nd ref="14058411283"/>
+  <nd ref="14058411284"/>
+  <nd ref="14058411285"/>
+  <nd ref="2013654052"/>
+  <nd ref="14058411286"/>
+  <nd ref="14058411287"/>
+  <nd ref="14058411282"/>
+  <nd ref="14058411281"/>
+  <nd ref="14058411280"/>
+  <nd ref="14058411279"/>
+  <nd ref="14058411275"/>
+  <nd ref="14058411276"/>
+  <nd ref="14058411277"/>
+  <nd ref="14058411278"/>
+  <nd ref="14058411274"/>
+  <nd ref="2013654048"/>
+  <nd ref="8214252239"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="140182859" visible="true" version="19" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="11887783416"/>
+  <nd ref="9294726235"/>
+  <nd ref="6173990481"/>
+  <nd ref="30264647"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="1"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="149472203" visible="true" version="13" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="30264647"/>
+  <nd ref="7021902544"/>
+  <nd ref="6173990480"/>
+  <nd ref="9294726232"/>
+  <nd ref="7021902535"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="149472206" visible="true" version="10" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="30237081"/>
+  <nd ref="3618456747"/>
+  <nd ref="8170883311"/>
+  <nd ref="2013654038"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="149472208" visible="true" version="9" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="1535839511"/>
+  <nd ref="3618456746"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="237549919" visible="true" version="18" changeset="174064590" timestamp="2025-11-01T14:15:30Z" user="MacLondon" uid="322039">
+  <nd ref="12919684474"/>
+  <nd ref="5758403322"/>
+  <nd ref="9397904794"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:forward" v="through|through;right"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="239293915" visible="true" version="26" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="5264616329"/>
+  <nd ref="12919684466"/>
+  <nd ref="6173990516"/>
+  <nd ref="425612244"/>
+  <nd ref="6173990514"/>
+  <nd ref="12919684464"/>
+  <nd ref="14069055359"/>
+  <nd ref="425612237"/>
+  <nd ref="3754942568"/>
+  <nd ref="9405618752"/>
+  <nd ref="2195526826"/>
+  <nd ref="425612235"/>
+  <nd ref="425612230"/>
+  <nd ref="9397904771"/>
+  <nd ref="425612228"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Travessera de les Corts"/>
+  <tag k="name:ca" v="Travessera de les Corts"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="wikidata" v="Q20104393"/>
+  <tag k="wikipedia" v="ca:Travessera de les Corts"/>
+ </way>
+ <way id="249808253" visible="true" version="17" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535">
+  <nd ref="401870564"/>
+  <nd ref="9397904776"/>
+  <nd ref="6173990522"/>
+  <nd ref="12919684468"/>
+  <nd ref="9397904782"/>
+  <nd ref="6173990525"/>
+  <nd ref="5264791964"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="251749492" visible="true" version="11" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535">
+  <nd ref="35120240"/>
+  <nd ref="9397904791"/>
+  <nd ref="5264792101"/>
+  <nd ref="9397904792"/>
+  <nd ref="687897075"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="5"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="3"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:forward" v="through|through|right"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="309195752" visible="true" version="2" changeset="125492980" timestamp="2022-08-28T19:54:02Z" user="user_177389" uid="177389">
+  <nd ref="3145262115"/>
+  <nd ref="2013654021"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="309195767" visible="true" version="7" changeset="125492980" timestamp="2022-08-28T19:54:02Z" user="user_177389" uid="177389">
+  <nd ref="3145262121"/>
+  <nd ref="6069092936"/>
+  <nd ref="6080638154"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="372554364" visible="true" version="13" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154">
+  <nd ref="251543584"/>
+  <nd ref="8148294117"/>
+  <nd ref="1624386754"/>
+  <nd ref="9935693349"/>
+  <nd ref="6173990472"/>
+  <nd ref="14127222582"/>
+  <nd ref="14127222584"/>
+  <nd ref="14127222583"/>
+  <nd ref="6711105807"/>
+  <nd ref="9935693348"/>
+  <nd ref="6173990476"/>
+  <nd ref="30237104"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="387412297" visible="true" version="6" changeset="187443789" timestamp="2026-08-14T13:44:11Z" user="marcmarti" uid="10355154">
+  <nd ref="6080638154"/>
+  <nd ref="14094583043"/>
+  <nd ref="14094583042"/>
+  <nd ref="14094583041"/>
+  <nd ref="14094583040"/>
+  <nd ref="6069092937"/>
+  <nd ref="2013654028"/>
+  <nd ref="6069092938"/>
+  <nd ref="2013654027"/>
+  <nd ref="6985513763"/>
+  <nd ref="576936646"/>
+  <nd ref="2013654026"/>
+  <nd ref="2013654025"/>
+  <nd ref="2013654024"/>
+  <nd ref="576936645"/>
+  <nd ref="2013654023"/>
+  <nd ref="2013654022"/>
+  <nd ref="576936644"/>
+  <nd ref="576936643"/>
+  <nd ref="3145262115"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="539012766" visible="true" version="19" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154">
+  <nd ref="966339770"/>
+  <nd ref="10828255590"/>
+  <nd ref="14126984927"/>
+  <nd ref="8170883313"/>
+  <nd ref="8170952757"/>
+  <nd ref="6658845911"/>
+  <nd ref="60200335"/>
+  <tag k="access:backward" v="private"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="1"/>
+  <tag k="lanes:psv:backward" v="1"/>
+  <tag k="lit" v="yes"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:backward" v="designated"/>
+  <tag k="psv:lanes:backward" v="designated"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="539012768" visible="true" version="17" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154">
+  <nd ref="11351350296"/>
+  <nd ref="6172125562"/>
+  <nd ref="14126984923"/>
+  <nd ref="3618456751"/>
+  <nd ref="14126984925"/>
+  <nd ref="8408042208"/>
+  <nd ref="7012543129"/>
+  <nd ref="6172126207"/>
+  <nd ref="2013654029"/>
+  <tag k="cycleway:right" v="shared_lane"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lane_markings" v="yes"/>
+  <tag k="lanes" v="2"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="1"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="544641222" visible="true" version="11" changeset="172071916" timestamp="2025-09-17T15:31:20Z" user="MarcosdeE" uid="12230027">
+  <nd ref="5264616254"/>
+  <nd ref="8361399868"/>
+  <nd ref="9397904788"/>
+  <nd ref="9397904790"/>
+  <nd ref="6173990529"/>
+  <nd ref="12919684470"/>
+  <nd ref="12919684472"/>
+  <nd ref="35120240"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:forward" v="through|through;right"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="544641223" visible="true" version="12" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535">
+  <nd ref="251543450"/>
+  <nd ref="11218778225"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Travessera de les Corts"/>
+  <tag k="name:ca" v="Travessera de les Corts"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="wikidata" v="Q20104393"/>
+  <tag k="wikipedia" v="ca:Travessera de les Corts"/>
+ </way>
+ <way id="544658923" visible="true" version="16" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="401870564"/>
+  <nd ref="5264792104"/>
+  <nd ref="12291991685"/>
+  <nd ref="14127037809"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:left" v="shared_lane"/>
+  <tag k="cycleway:right" v="share_busway"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:backward" v="through|through;right"/>
+  <tag k="turn:lanes:forward" v="left|through"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="544658925" visible="true" version="17" changeset="176690907" timestamp="2026-01-01T01:38:31Z" user="sanchi" uid="170106">
+  <nd ref="5264791965"/>
+  <nd ref="13274010919"/>
+  <nd ref="9397877115"/>
+  <nd ref="5264791770"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="shared_lane"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="550655510" visible="true" version="12" changeset="172071916" timestamp="2025-09-17T15:31:20Z" user="MarcosdeE" uid="12230027">
+  <nd ref="5264792102"/>
+  <nd ref="6173990528"/>
+  <nd ref="11464402850"/>
+  <nd ref="5264616254"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="560543744" visible="true" version="11" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535">
+  <nd ref="5405788370"/>
+  <nd ref="11781563940"/>
+  <nd ref="6173990526"/>
+  <nd ref="11781563941"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:forward" v="through|through;right"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="560543749" visible="true" version="9" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="30237104"/>
+  <nd ref="6173990473"/>
+  <nd ref="9935693347"/>
+  <nd ref="11887783415"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="1"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:backward" v="left|through"/>
+ </way>
+ <way id="569040499" visible="true" version="12" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="2013654034"/>
+  <nd ref="6173990496"/>
+  <nd ref="8144185786"/>
+  <nd ref="8144185795"/>
+  <nd ref="6173990500"/>
+  <nd ref="3145723390"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="625783998" visible="true" version="4" changeset="125492980" timestamp="2022-08-28T19:54:02Z" user="user_177389" uid="177389">
+  <nd ref="2013654021"/>
+  <nd ref="576936642"/>
+  <nd ref="6069092939"/>
+  <nd ref="6069092940"/>
+  <nd ref="5908150785"/>
+  <nd ref="2972004898"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="625783999" visible="true" version="3" changeset="125492980" timestamp="2022-08-28T19:54:02Z" user="user_177389" uid="177389">
+  <nd ref="7052720028"/>
+  <nd ref="576936641"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="645715927" visible="true" version="6" changeset="159690625" timestamp="2024-11-28T08:29:28Z" user="jejo mo" uid="3283858">
+  <nd ref="3163820493"/>
+  <nd ref="12381896137"/>
+  <nd ref="4750796241"/>
+  <nd ref="575789394"/>
+  <nd ref="3067409324"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="645725870" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192">
+  <nd ref="6069157695"/>
+  <nd ref="6710527380"/>
+  <nd ref="6710527362"/>
+  <nd ref="6710527358"/>
+  <nd ref="6710553091"/>
+  <nd ref="6710527351"/>
+  <nd ref="6710527371"/>
+  <nd ref="7051174500"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="RESOLUCIÓN PRE/718/2019, de 20 de marzo, por la que se da publicidad al deslinde entre los términos municipales de L'Hospitalet de Llobregat y de Cornellà de Llobregat."/>
+ </way>
+ <way id="645725872" visible="true" version="3" changeset="113177998" timestamp="2021-10-31T01:36:48Z" user="friguron" uid="843351">
+  <nd ref="3067409324"/>
+  <nd ref="7438788565"/>
+  <nd ref="7438788564"/>
+  <nd ref="7438788562"/>
+  <nd ref="7438788561"/>
+  <nd ref="7438788560"/>
+  <nd ref="7438788559"/>
+  <nd ref="7438788558"/>
+  <nd ref="7438788557"/>
+  <nd ref="7438788556"/>
+  <nd ref="7438788555"/>
+  <nd ref="7438788554"/>
+  <nd ref="7438788553"/>
+  <nd ref="2706857314"/>
+  <nd ref="7438788552"/>
+  <nd ref="7438788551"/>
+  <nd ref="7438788550"/>
+  <nd ref="7438788549"/>
+  <nd ref="7438788548"/>
+  <nd ref="7438788547"/>
+  <nd ref="7438788546"/>
+  <nd ref="7438788545"/>
+  <nd ref="7438788544"/>
+  <nd ref="7438788543"/>
+  <nd ref="7438788542"/>
+  <nd ref="7438788541"/>
+  <nd ref="7438788540"/>
+  <nd ref="7438788539"/>
+  <nd ref="6069157695"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="RESOLUCIÓN PRE/718/2019, de 20 de marzo, por la que se da publicidad al deslinde entre los términos municipales de L'Hospitalet de Llobregat y de Cornellà de Llobregat."/>
+ </way>
+ <way id="645728489" visible="true" version="2" changeset="69459257" timestamp="2019-04-22T16:11:04Z" user="Iknition" uid="9651530">
+  <nd ref="6069092944"/>
+  <nd ref="3163820493"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="650573012" visible="true" version="9" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="7589389896"/>
+  <nd ref="5306572366"/>
+  <nd ref="13267266302"/>
+  <nd ref="7221370979"/>
+  <nd ref="7589389901"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="layer" v="-2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="650573013" visible="true" version="14" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="8170952758"/>
+  <nd ref="3618456749"/>
+  <nd ref="3618456750"/>
+  <nd ref="9291257912"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="1"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="751081163" visible="true" version="6" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="7021902535"/>
+  <nd ref="6173990484"/>
+  <nd ref="30237081"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="754810565" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192">
+  <nd ref="7051126078"/>
+  <nd ref="7438788538"/>
+  <nd ref="6069092922"/>
+  <nd ref="575788756"/>
+  <nd ref="7438788537"/>
+  <nd ref="7438788536"/>
+  <nd ref="7438788535"/>
+  <nd ref="7438788534"/>
+  <nd ref="7438788533"/>
+  <nd ref="7438788532"/>
+  <nd ref="7438788531"/>
+  <nd ref="7438788530"/>
+  <nd ref="575788755"/>
+  <nd ref="7438788529"/>
+  <nd ref="7438788528"/>
+  <nd ref="575788698"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="RESOLUCIÓN PRE/718/2019, de 20 de marzo, por la que se da publicidad al deslinde entre los términos municipales de L'Hospitalet de Llobregat y de Cornellà de Llobregat."/>
+ </way>
+ <way id="754815082" visible="true" version="2" changeset="84012224" timestamp="2020-04-23T16:08:13Z" user="Santi2222" uid="493192">
+  <nd ref="7051174500"/>
+  <nd ref="6710553088"/>
+  <nd ref="6710527378"/>
+  <nd ref="6710527381"/>
+  <nd ref="6710527363"/>
+  <nd ref="6710553092"/>
+  <nd ref="6710553095"/>
+  <nd ref="6710527379"/>
+  <nd ref="3367972393"/>
+  <nd ref="6069092942"/>
+  <nd ref="575788764"/>
+  <nd ref="6710527376"/>
+  <nd ref="3096490091"/>
+  <nd ref="6710527350"/>
+  <nd ref="6710527373"/>
+  <nd ref="6710553090"/>
+  <nd ref="6710527353"/>
+  <nd ref="6710527365"/>
+  <nd ref="6710553104"/>
+  <nd ref="6710527370"/>
+  <nd ref="6710553086"/>
+  <nd ref="6710553093"/>
+  <nd ref="6710527383"/>
+  <nd ref="6710527356"/>
+  <nd ref="575788760"/>
+  <nd ref="575788761"/>
+  <nd ref="575788759"/>
+  <nd ref="575788758"/>
+  <nd ref="6710553096"/>
+  <nd ref="6710527360"/>
+  <nd ref="6710553099"/>
+  <nd ref="7051126078"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="RESOLUCIÓN PRE/718/2019, de 20 de marzo, por la que se da publicidad al deslinde entre los términos municipales de L'Hospitalet de Llobregat y de Cornellà de Llobregat."/>
+ </way>
+ <way id="754815370" visible="true" version="1" changeset="78298944" timestamp="2019-12-12T06:34:43Z" user="caminsperfer" uid="10187213">
+  <nd ref="7051170953"/>
+  <nd ref="6812815780"/>
+  <nd ref="6812815779"/>
+  <nd ref="6812815781"/>
+  <nd ref="6812815778"/>
+  <nd ref="6812815777"/>
+  <nd ref="575789390"/>
+  <nd ref="575789391"/>
+  <nd ref="575789392"/>
+  <nd ref="6069092944"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="754815373" visible="true" version="2" changeset="160263555" timestamp="2024-12-13T22:16:15Z" user="MarcosdeE" uid="12230027">
+  <nd ref="30584105"/>
+  <nd ref="6812844296"/>
+  <nd ref="6812844295"/>
+  <nd ref="6812844294"/>
+  <nd ref="6812844289"/>
+  <nd ref="6812844290"/>
+  <nd ref="6812844291"/>
+  <nd ref="6812844292"/>
+  <nd ref="575789388"/>
+  <nd ref="12421649254"/>
+  <nd ref="6920381204"/>
+  <nd ref="12421649255"/>
+  <nd ref="6812844293"/>
+  <nd ref="6812844287"/>
+  <nd ref="6812844286"/>
+  <nd ref="6812844288"/>
+  <nd ref="6812844285"/>
+  <nd ref="6812815782"/>
+  <nd ref="6812815783"/>
+  <nd ref="6812815784"/>
+  <nd ref="575789389"/>
+  <nd ref="7051170953"/>
+  <tag k="admin_level" v="7"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="812545697" visible="true" version="3" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="7589389910"/>
+  <nd ref="7589389892"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="layer" v="-2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+  <tag k="tunnel" v="yes"/>
+ </way>
+ <way id="812545699" visible="true" version="5" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154">
+  <nd ref="7589389893"/>
+  <nd ref="14127248708"/>
+  <nd ref="14127037807"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="layer" v="-2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+  <tag k="tunnel" v="yes"/>
+ </way>
+ <way id="812545703" visible="true" version="4" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="667898752"/>
+  <nd ref="6173990499"/>
+  <nd ref="7589389893"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="layer" v="-2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="812545705" visible="true" version="5" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="7589389901"/>
+  <nd ref="13267266305"/>
+  <nd ref="7589389909"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="layer" v="-2"/>
+  <tag k="maxheight" v="4.4"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+  <tag k="tunnel" v="yes"/>
+ </way>
+ <way id="812545713" visible="true" version="3" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="7589389909"/>
+  <nd ref="7589389910"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="layer" v="-2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="812545714" visible="true" version="3" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="7589389892"/>
+  <nd ref="5306568886"/>
+  <nd ref="1482469049"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="layer" v="-2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="838264223" visible="true" version="2" changeset="125492980" timestamp="2022-08-28T19:54:02Z" user="user_177389" uid="177389">
+  <nd ref="2972004898"/>
+  <nd ref="7052720028"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="901541481" visible="true" version="5" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154">
+  <nd ref="1528727077"/>
+  <nd ref="14127222581"/>
+  <nd ref="8374788340"/>
+  <nd ref="8374788339"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="designated"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="901541482" visible="true" version="4" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="1595126752"/>
+  <nd ref="1535825957"/>
+  <nd ref="8264420315"/>
+  <nd ref="1535825956"/>
+  <nd ref="8264420314"/>
+  <nd ref="1528727075"/>
+  <nd ref="1528727077"/>
+  <tag k="bus:lanes:backward" v="designated"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="designated"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="926647728" visible="true" version="3" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="2013654038"/>
+  <nd ref="6173990485"/>
+  <nd ref="2013654037"/>
+  <nd ref="8170952760"/>
+  <nd ref="2507734015"/>
+  <nd ref="30236813"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="1210868746" visible="true" version="6" changeset="183036364" timestamp="2026-05-22T18:20:56Z" user="MarcosdeE" uid="12230027">
+  <nd ref="11218778225"/>
+  <nd ref="6173990513"/>
+  <nd ref="9405618751"/>
+  <nd ref="13861123064"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Travessera de les Corts"/>
+  <tag k="name:ca" v="Travessera de les Corts"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="wikidata" v="Q20104393"/>
+  <tag k="wikipedia" v="ca:Travessera de les Corts"/>
+ </way>
+ <way id="1223813143" visible="true" version="6" changeset="188063943" timestamp="2026-08-26T19:39:16Z" user="marcmarti" uid="10355154">
+  <nd ref="257940879"/>
+  <nd ref="13834492099"/>
+  <nd ref="11351350296"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lane_markings" v="yes"/>
+  <tag k="lanes" v="2"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="1"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1223813146" visible="true" version="6" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154">
+  <nd ref="60200335"/>
+  <nd ref="14126984922"/>
+  <nd ref="7021902489"/>
+  <nd ref="3621673349"/>
+  <nd ref="257940879"/>
+  <tag k="access:backward" v="private"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="1"/>
+  <tag k="lanes:psv:backward" v="1"/>
+  <tag k="lit" v="yes"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:backward" v="designated"/>
+  <tag k="psv:lanes:backward" v="designated"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1225026749" visible="true" version="5" changeset="187357340" timestamp="2026-08-12T19:21:38Z" user="marcmarti" uid="10355154">
+  <nd ref="687897174"/>
+  <nd ref="9876300964"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="maxspeed" v="50"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1225026751" visible="true" version="4" changeset="153839981" timestamp="2024-07-12T06:40:56Z" user="jqngarcia" uid="5126253">
+  <nd ref="9876300964"/>
+  <nd ref="1595126752"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="maxspeed" v="50"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1232189418" visible="true" version="4" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="1482469049"/>
+  <nd ref="10837253552"/>
+  <nd ref="13267266301"/>
+  <nd ref="8170952758"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="1232189419" visible="true" version="5" changeset="188064337" timestamp="2026-08-26T19:47:05Z" user="marcmarti" uid="10355154">
+  <nd ref="9291257912"/>
+  <nd ref="14126984930"/>
+  <nd ref="10828255587"/>
+  <nd ref="966339770"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1258709160" visible="true" version="3" changeset="167705912" timestamp="2025-06-16T17:46:52Z" user="MarcosdeE" uid="12230027">
+  <nd ref="425612275"/>
+  <nd ref="5264616329"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Travessera de les Corts"/>
+  <tag k="name:ca" v="Travessera de les Corts"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="wikidata" v="Q20104393"/>
+  <tag k="wikipedia" v="ca:Travessera de les Corts"/>
+ </way>
+ <way id="1268494384" visible="true" version="2" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535">
+  <nd ref="11781563941"/>
+  <nd ref="960996565"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:forward" v="through|through;right"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1268494385" visible="true" version="1" changeset="149500809" timestamp="2024-04-02T22:21:03Z" user="pswsm" uid="20249696">
+  <nd ref="960996565"/>
+  <nd ref="9397904785"/>
+  <nd ref="11464402849"/>
+  <nd ref="5264792102"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1280723715" visible="true" version="5" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="11887783415"/>
+  <nd ref="6173990477"/>
+  <nd ref="1535839511"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1280723716" visible="true" version="5" changeset="186307777" timestamp="2026-07-24T17:02:07Z" user="eyw27" uid="22879977">
+  <nd ref="3618456746"/>
+  <nd ref="6173990478"/>
+  <nd ref="11887783416"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="1"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="sidewalk:both" v="separate"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1395771685" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535">
+  <nd ref="5264791964"/>
+  <nd ref="9397904784"/>
+  <nd ref="9397904783"/>
+  <nd ref="5264791769"/>
+  <nd ref="5405788370"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:forward" v="through;left|through"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1395771686" visible="true" version="1" changeset="167703118" timestamp="2025-06-16T16:39:21Z" user="WilliamHarrison" uid="16806535">
+  <nd ref="687897075"/>
+  <nd ref="6173990530"/>
+  <nd ref="9397904793"/>
+  <nd ref="12919684471"/>
+  <nd ref="10814722758"/>
+  <nd ref="12919684474"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="share_busway"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:backward" v="yes|designated"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:forward" v="through|through;right"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1395821307" visible="true" version="2" changeset="183036364" timestamp="2026-05-22T18:20:56Z" user="MarcosdeE" uid="12230027">
+  <nd ref="13861123064"/>
+  <nd ref="425612275"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Travessera de les Corts"/>
+  <tag k="name:ca" v="Travessera de les Corts"/>
+  <tag k="oneway" v="no"/>
+  <tag k="psv:lanes:forward" v="yes|designated"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="wikidata" v="Q20104393"/>
+  <tag k="wikipedia" v="ca:Travessera de les Corts"/>
+ </way>
+ <way id="1445901121" visible="true" version="4" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="3145723390"/>
+  <nd ref="667898752"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1446717282" visible="true" version="1" changeset="174064590" timestamp="2025-11-01T14:15:30Z" user="MacLondon" uid="322039">
+  <nd ref="677439927"/>
+  <nd ref="6173990532"/>
+  <nd ref="10814722755"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="cycleway:both" v="no"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1446717283" visible="true" version="1" changeset="174064590" timestamp="2025-11-01T14:15:30Z" user="MacLondon" uid="322039">
+  <nd ref="9397904794"/>
+  <nd ref="10764781605"/>
+  <nd ref="677439927"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="cycleway:both" v="no"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1446717284" visible="true" version="2" changeset="183217839" timestamp="2026-05-26T16:27:43Z" user="sanjanasharma_lyft" uid="21668461">
+  <nd ref="10814722755"/>
+  <nd ref="10814755750"/>
+  <nd ref="12060295417"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="shared_lane"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1446717285" visible="true" version="1" changeset="174064590" timestamp="2025-11-01T14:15:30Z" user="MacLondon" uid="322039">
+  <nd ref="13274010974"/>
+  <nd ref="9397904795"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:left" v="share_busway"/>
+  <tag k="cycleway:right" v="shared_lane"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1463266770" visible="true" version="1" changeset="176690907" timestamp="2026-01-01T01:38:31Z" user="sanchi" uid="170106">
+  <nd ref="9397904795"/>
+  <nd ref="12919807301"/>
+  <nd ref="5264791965"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="shared_lane"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1522870618" visible="true" version="1" changeset="183217839" timestamp="2026-05-26T16:27:43Z" user="sanjanasharma_lyft" uid="21668461">
+  <nd ref="12060295417"/>
+  <nd ref="12060295424"/>
+  <nd ref="13274010974"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="change:lanes:backward" v="not_left|yes"/>
+  <tag k="change:lanes:forward" v="not_left|yes"/>
+  <tag k="cycleway:both" v="shared_lane"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="2"/>
+  <tag k="lanes:forward" v="2"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carretera de Collblanc"/>
+  <tag k="name:ca" v="Carretera de Collblanc"/>
+  <tag k="oneway" v="no"/>
+  <tag k="ref" v="N-340"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="width" v="12"/>
+ </way>
+ <way id="1552691503" visible="true" version="2" changeset="188068566" timestamp="2026-08-26T21:46:57Z" user="marcmarti" uid="10355154">
+  <nd ref="14127037807"/>
+  <nd ref="14127248707"/>
+  <nd ref="7589389896"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="layer" v="-2"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Carrer de la Riera Blanca"/>
+  <tag k="name:ca" v="Carrer de la Riera Blanca"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="paved"/>
+  <tag k="tunnel" v="yes"/>
+ </way>
+ <way id="1552691507" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="14127037809"/>
+  <nd ref="14127037808"/>
+  <nd ref="425612228"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="1552691508" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="14127037810"/>
+  <nd ref="251543450"/>
+  <tag k="cycleway:both" v="no"/>
+  <tag k="foot" v="no"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="lanes" v="4"/>
+  <tag k="lanes:backward" v="1"/>
+  <tag k="lanes:forward" v="3"/>
+  <tag k="lit" v="yes"/>
+  <tag k="maxspeed" v="30"/>
+  <tag k="name" v="Travessera de les Corts"/>
+  <tag k="name:ca" v="Travessera de les Corts"/>
+  <tag k="psv:lanes:backward" v="designated"/>
+  <tag k="sidewalk" v="no"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="turn:lanes:forward" v="left;through|through;right|right"/>
+  <tag k="wikidata" v="Q20104393"/>
+  <tag k="wikipedia" v="ca:Travessera de les Corts"/>
+ </way>
+ <way id="1552691509" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="687897174"/>
+  <nd ref="14127037815"/>
+  <nd ref="14127037814"/>
+  <nd ref="14127037813"/>
+  <nd ref="14127037812"/>
+  <nd ref="14127037811"/>
+  <nd ref="14127037810"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="1552691510" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="8214252239"/>
+  <nd ref="5264791770"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <way id="1552691511" visible="true" version="1" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <nd ref="2013654029"/>
+  <nd ref="6069092935"/>
+  <nd ref="10130509466"/>
+  <nd ref="3145262121"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+ </way>
+ <relation id="345401" visible="true" version="59" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <member type="node" ref="939880925" role="admin_centre"/>
+  <member type="relation" ref="10401698" role="subarea"/>
+  <member type="relation" ref="10401708" role="subarea"/>
+  <member type="relation" ref="10401733" role="subarea"/>
+  <member type="relation" ref="10401782" role="subarea"/>
+  <member type="relation" ref="10401792" role="subarea"/>
+  <member type="relation" ref="10402940" role="subarea"/>
+  <member type="way" ref="645728489" role="outer"/>
+  <member type="way" ref="645715927" role="outer"/>
+  <member type="way" ref="645725872" role="outer"/>
+  <member type="way" ref="645725870" role="outer"/>
+  <member type="way" ref="754815082" role="outer"/>
+  <member type="way" ref="754810565" role="outer"/>
+  <member type="way" ref="45371370" role="outer"/>
+  <member type="way" ref="625783999" role="outer"/>
+  <member type="way" ref="838264223" role="outer"/>
+  <member type="way" ref="625783998" role="outer"/>
+  <member type="way" ref="309195752" role="outer"/>
+  <member type="way" ref="387412297" role="outer"/>
+  <member type="way" ref="309195767" role="outer"/>
+  <member type="way" ref="1552691511" role="outer"/>
+  <member type="way" ref="539012768" role="outer"/>
+  <member type="way" ref="1223813143" role="outer"/>
+  <member type="way" ref="1223813146" role="outer"/>
+  <member type="way" ref="539012766" role="outer"/>
+  <member type="way" ref="1232189419" role="outer"/>
+  <member type="way" ref="650573013" role="outer"/>
+  <member type="way" ref="1232189418" role="outer"/>
+  <member type="way" ref="812545714" role="outer"/>
+  <member type="way" ref="812545697" role="outer"/>
+  <member type="way" ref="812545713" role="outer"/>
+  <member type="way" ref="812545705" role="outer"/>
+  <member type="way" ref="650573012" role="outer"/>
+  <member type="way" ref="1552691503" role="outer"/>
+  <member type="way" ref="812545699" role="outer"/>
+  <member type="way" ref="812545703" role="outer"/>
+  <member type="way" ref="1445901121" role="outer"/>
+  <member type="way" ref="569040499" role="outer"/>
+  <member type="way" ref="23804347" role="outer"/>
+  <member type="way" ref="926647728" role="outer"/>
+  <member type="way" ref="149472206" role="outer"/>
+  <member type="way" ref="751081163" role="outer"/>
+  <member type="way" ref="149472203" role="outer"/>
+  <member type="way" ref="140182859" role="outer"/>
+  <member type="way" ref="1280723716" role="outer"/>
+  <member type="way" ref="149472208" role="outer"/>
+  <member type="way" ref="1280723715" role="outer"/>
+  <member type="way" ref="560543749" role="outer"/>
+  <member type="way" ref="372554364" role="outer"/>
+  <member type="way" ref="24287433" role="outer"/>
+  <member type="way" ref="901541481" role="outer"/>
+  <member type="way" ref="901541482" role="outer"/>
+  <member type="way" ref="1225026751" role="outer"/>
+  <member type="way" ref="1225026749" role="outer"/>
+  <member type="way" ref="1552691509" role="outer"/>
+  <member type="way" ref="1552691508" role="outer"/>
+  <member type="way" ref="544641223" role="outer"/>
+  <member type="way" ref="1210868746" role="outer"/>
+  <member type="way" ref="1395821307" role="outer"/>
+  <member type="way" ref="1258709160" role="outer"/>
+  <member type="way" ref="239293915" role="outer"/>
+  <member type="way" ref="1552691507" role="outer"/>
+  <member type="way" ref="544658923" role="outer"/>
+  <member type="way" ref="249808253" role="outer"/>
+  <member type="way" ref="1395771685" role="outer"/>
+  <member type="way" ref="560543744" role="outer"/>
+  <member type="way" ref="1268494384" role="outer"/>
+  <member type="way" ref="1268494385" role="outer"/>
+  <member type="way" ref="550655510" role="outer"/>
+  <member type="way" ref="544641222" role="outer"/>
+  <member type="way" ref="251749492" role="outer"/>
+  <member type="way" ref="1395771686" role="outer"/>
+  <member type="way" ref="237549919" role="outer"/>
+  <member type="way" ref="1446717283" role="outer"/>
+  <member type="way" ref="1446717282" role="outer"/>
+  <member type="way" ref="1446717284" role="outer"/>
+  <member type="way" ref="1522870618" role="outer"/>
+  <member type="way" ref="1446717285" role="outer"/>
+  <member type="way" ref="1463266770" role="outer"/>
+  <member type="way" ref="544658925" role="outer"/>
+  <member type="way" ref="1552691510" role="outer"/>
+  <member type="way" ref="45371371" role="outer"/>
+  <member type="way" ref="45319704" role="outer"/>
+  <member type="way" ref="754815373" role="outer"/>
+  <member type="way" ref="754815370" role="outer"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="alt_name" v="l'Hospitalet"/>
+  <tag k="border_type" v="municipi"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="idee:name" v="Hospitalet de Llobregat (L')"/>
+  <tag k="ine:municipio" v="08101"/>
+  <tag k="name" v="l'Hospitalet de Llobregat"/>
+  <tag k="name:ca" v="l'Hospitalet de Llobregat"/>
+  <tag k="name:ru" v="Оспиталет-де-Льобрегат"/>
+  <tag k="old_name" v="Hospitalet;Santa Eulàlia de Provençana"/>
+  <tag k="old_name:es" v="Hospitalet de Llobregat;Santa Eulalia de Provensana"/>
+  <tag k="population" v="292161"/>
+  <tag k="population:date" v="2025"/>
+  <tag k="ref:idescat" v="081017"/>
+  <tag k="ref:ine" v="08101000000"/>
+  <tag k="short_name" v="L'H;Hospi;Hospitalet"/>
+  <tag k="sorting_name" v="Hospitalet de Llobregat, l'"/>
+  <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+  <tag k="source:population" v="https://www.idescat.cat/codis/?id=50&amp;n=9&amp;c=081017"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q15470"/>
+  <tag k="wikipedia" v="ca:L'Hospitalet de Llobregat"/>
+ </relation>
+ <relation id="10401698" visible="true" version="23" changeset="188966634" timestamp="2026-09-13T15:13:23Z" user="mapper_72214" uid="7458957">
+  <member type="relation" ref="10401944" role="subarea"/>
+  <member type="relation" ref="10402638" role="subarea"/>
+  <member type="relation" ref="10402653" role="subarea"/>
+  <member type="way" ref="645725870" role="outer"/>
+  <member type="way" ref="645725872" role="outer"/>
+  <member type="way" ref="645715927" role="outer"/>
+  <member type="way" ref="645728489" role="outer"/>
+  <member type="way" ref="754815370" role="outer"/>
+  <member type="way" ref="754815372" role="outer"/>
+  <member type="way" ref="1429854200" role="outer"/>
+  <member type="way" ref="569040507" role="outer"/>
+  <member type="way" ref="402688964" role="outer"/>
+  <member type="way" ref="1314873123" role="outer"/>
+  <member type="way" ref="1025498902" role="outer"/>
+  <member type="way" ref="39094846" role="outer"/>
+  <member type="way" ref="771993441" role="outer"/>
+  <member type="way" ref="771993440" role="outer"/>
+  <member type="way" ref="1383665709" role="outer"/>
+  <member type="way" ref="1383665708" role="outer"/>
+  <member type="way" ref="754815077" role="outer"/>
+  <member type="way" ref="294049042" role="outer"/>
+  <member type="way" ref="294049046" role="outer"/>
+  <member type="way" ref="267003772" role="outer"/>
+  <member type="way" ref="267003773" role="outer"/>
+  <member type="way" ref="754815075" role="outer"/>
+  <member type="way" ref="267004207" role="outer"/>
+  <member type="way" ref="754813643" role="outer"/>
+  <member type="way" ref="754813644" role="outer"/>
+  <member type="way" ref="1383668647" role="outer"/>
+  <member type="way" ref="1383668644" role="outer"/>
+  <member type="way" ref="1341653150" role="outer"/>
+  <member type="way" ref="1341653151" role="outer"/>
+  <member type="way" ref="79685486" role="outer"/>
+  <member type="way" ref="1076594380" role="outer"/>
+  <member type="way" ref="1355211332" role="outer"/>
+  <member type="way" ref="1076160360" role="outer"/>
+  <member type="way" ref="1355211333" role="outer"/>
+  <member type="way" ref="1076416259" role="outer"/>
+  <member type="way" ref="83210485" role="outer"/>
+  <member type="way" ref="560548098" role="outer"/>
+  <member type="way" ref="83210483" role="outer"/>
+  <member type="way" ref="79685483" role="outer"/>
+  <member type="way" ref="552622373" role="outer"/>
+  <member type="way" ref="1558556846" role="outer"/>
+  <member type="way" ref="552622128" role="outer"/>
+  <member type="way" ref="540228119" role="outer"/>
+  <member type="way" ref="551081815" role="outer"/>
+  <member type="way" ref="76354527" role="outer"/>
+  <member type="way" ref="569042353" role="outer"/>
+  <member type="way" ref="243889930" role="outer"/>
+  <member type="way" ref="569048955" role="outer"/>
+  <member type="way" ref="243889927" role="outer"/>
+  <member type="way" ref="243890836" role="outer"/>
+  <member type="way" ref="1021983913" role="outer"/>
+  <member type="way" ref="1355209593" role="outer"/>
+  <member type="way" ref="754810564" role="outer"/>
+  <member type="way" ref="754815082" role="outer"/>
+  <tag k="admin_level" v="9"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Districte I"/>
+  <tag k="name:ca" v="Districte I"/>
+  <tag k="place" v="borough"/>
+  <tag k="ref" v="1"/>
+  <tag k="source" v="https://geoportal.l-h.cat"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="10401708" visible="true" version="17" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <member type="relation" ref="10402659" role="subarea"/>
+  <member type="relation" ref="10402685" role="subarea"/>
+  <member type="way" ref="1232057637" role="outer"/>
+  <member type="way" ref="83097389" role="outer"/>
+  <member type="way" ref="1110154733" role="outer"/>
+  <member type="way" ref="1110154734" role="outer"/>
+  <member type="way" ref="83097166" role="outer"/>
+  <member type="way" ref="1232057645" role="outer"/>
+  <member type="way" ref="1370385363" role="outer"/>
+  <member type="way" ref="1370385361" role="outer"/>
+  <member type="way" ref="520508389" role="outer"/>
+  <member type="way" ref="863912661" role="outer"/>
+  <member type="way" ref="80789107" role="outer"/>
+  <member type="way" ref="1305331018" role="outer"/>
+  <member type="way" ref="1305331019" role="outer"/>
+  <member type="way" ref="80789111" role="outer"/>
+  <member type="way" ref="560543742" role="outer"/>
+  <member type="way" ref="560543741" role="outer"/>
+  <member type="way" ref="198489316" role="outer"/>
+  <member type="way" ref="182006728" role="outer"/>
+  <member type="way" ref="772689013" role="outer"/>
+  <member type="way" ref="550655509" role="outer"/>
+  <member type="way" ref="1383663490" role="outer"/>
+  <member type="way" ref="550655508" role="outer"/>
+  <member type="way" ref="1383663485" role="outer"/>
+  <member type="way" ref="1383663484" role="outer"/>
+  <member type="way" ref="1383663483" role="outer"/>
+  <member type="way" ref="1552691510" role="outer"/>
+  <member type="way" ref="544658925" role="outer"/>
+  <member type="way" ref="1463266770" role="outer"/>
+  <member type="way" ref="1446717285" role="outer"/>
+  <member type="way" ref="1522870618" role="outer"/>
+  <member type="way" ref="1446717284" role="outer"/>
+  <member type="way" ref="1446717282" role="outer"/>
+  <member type="way" ref="1446717283" role="outer"/>
+  <member type="way" ref="237549919" role="outer"/>
+  <member type="way" ref="1395771686" role="outer"/>
+  <member type="way" ref="251749492" role="outer"/>
+  <member type="way" ref="544641222" role="outer"/>
+  <member type="way" ref="550655510" role="outer"/>
+  <member type="way" ref="1268494385" role="outer"/>
+  <member type="way" ref="1268494384" role="outer"/>
+  <member type="way" ref="560543744" role="outer"/>
+  <member type="way" ref="1395771685" role="outer"/>
+  <member type="way" ref="249808253" role="outer"/>
+  <member type="way" ref="544658923" role="outer"/>
+  <member type="way" ref="1552691507" role="outer"/>
+  <member type="way" ref="239293915" role="outer"/>
+  <member type="way" ref="1258709160" role="outer"/>
+  <member type="way" ref="1395821307" role="outer"/>
+  <member type="way" ref="1210868746" role="outer"/>
+  <member type="way" ref="544641223" role="outer"/>
+  <member type="way" ref="1552691508" role="outer"/>
+  <member type="way" ref="1552691509" role="outer"/>
+  <member type="way" ref="1225026749" role="outer"/>
+  <member type="way" ref="1225026751" role="outer"/>
+  <member type="way" ref="901541482" role="outer"/>
+  <member type="way" ref="901541481" role="outer"/>
+  <member type="way" ref="24287433" role="outer"/>
+  <member type="way" ref="372554364" role="outer"/>
+  <member type="way" ref="560543749" role="outer"/>
+  <member type="way" ref="1280723715" role="outer"/>
+  <member type="way" ref="149472208" role="outer"/>
+  <member type="way" ref="1280723716" role="outer"/>
+  <member type="way" ref="140182859" role="outer"/>
+  <member type="way" ref="149472203" role="outer"/>
+  <member type="way" ref="751081163" role="outer"/>
+  <member type="way" ref="149472206" role="outer"/>
+  <member type="way" ref="926647728" role="outer"/>
+  <member type="way" ref="23804347" role="outer"/>
+  <member type="way" ref="569040499" role="outer"/>
+  <member type="way" ref="1445901121" role="outer"/>
+  <member type="way" ref="812545703" role="outer"/>
+  <member type="way" ref="812545699" role="outer"/>
+  <member type="way" ref="1552691504" role="outer"/>
+  <member type="way" ref="754824275" role="outer"/>
+  <member type="way" ref="754820827" role="outer"/>
+  <member type="way" ref="754813643" role="outer"/>
+  <member type="way" ref="267004207" role="outer"/>
+  <member type="way" ref="754815075" role="outer"/>
+  <tag k="admin_level" v="9"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Districte II"/>
+  <tag k="name:ca" v="Districte II"/>
+  <tag k="place" v="borough"/>
+  <tag k="ref" v="2"/>
+  <tag k="source" v="https://geoportal.l-h.cat"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="10401733" visible="true" version="17" changeset="188066001" timestamp="2026-08-26T20:26:30Z" user="marcmarti_import" uid="23854535">
+  <member type="relation" ref="10402691" role="subarea"/>
+  <member type="relation" ref="10402697" role="subarea"/>
+  <member type="way" ref="754813644" role="outer"/>
+  <member type="way" ref="1383668647" role="outer"/>
+  <member type="way" ref="1383668644" role="outer"/>
+  <member type="way" ref="1341653150" role="outer"/>
+  <member type="way" ref="754817403" role="outer"/>
+  <member type="way" ref="284305475" role="outer"/>
+  <member type="way" ref="1341647353" role="outer"/>
+  <member type="way" ref="1341647349" role="outer"/>
+  <member type="way" ref="4787715" role="outer"/>
+  <member type="way" ref="754817695" role="outer"/>
+  <member type="way" ref="945966263" role="outer"/>
+  <member type="way" ref="23792473" role="outer"/>
+  <member type="way" ref="80394350" role="outer"/>
+  <member type="way" ref="44650418" role="outer"/>
+  <member type="way" ref="754817696" role="outer"/>
+  <member type="way" ref="560543767" role="outer"/>
+  <member type="way" ref="83069475" role="outer"/>
+  <member type="way" ref="308115390" role="outer"/>
+  <member type="way" ref="308115392" role="outer"/>
+  <member type="way" ref="1363008447" role="outer"/>
+  <member type="way" ref="1025345945" role="outer"/>
+  <member type="way" ref="754810028" role="outer"/>
+  <member type="way" ref="386870000" role="outer"/>
+  <member type="way" ref="625783998" role="outer"/>
+  <member type="way" ref="309195752" role="outer"/>
+  <member type="way" ref="387412297" role="outer"/>
+  <member type="way" ref="309195767" role="outer"/>
+  <member type="way" ref="1552691511" role="outer"/>
+  <member type="way" ref="539012768" role="outer"/>
+  <member type="way" ref="1223813143" role="outer"/>
+  <member type="way" ref="1223813146" role="outer"/>
+  <member type="way" ref="539012766" role="outer"/>
+  <member type="way" ref="1232189419" role="outer"/>
+  <member type="way" ref="650573013" role="outer"/>
+  <member type="way" ref="1232189418" role="outer"/>
+  <member type="way" ref="812545714" role="outer"/>
+  <member type="way" ref="812545697" role="outer"/>
+  <member type="way" ref="812545713" role="outer"/>
+  <member type="way" ref="812545705" role="outer"/>
+  <member type="way" ref="650573012" role="outer"/>
+  <member type="way" ref="1552691503" role="outer"/>
+  <member type="way" ref="1552691504" role="outer"/>
+  <member type="way" ref="754824275" role="outer"/>
+  <member type="way" ref="754820827" role="outer"/>
+  <tag k="admin_level" v="9"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Districte III"/>
+  <tag k="name:ca" v="Districte III"/>
+  <tag k="place" v="borough"/>
+  <tag k="ref" v="3"/>
+  <tag k="source" v="https://geoportal.l-h.cat"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="10401782" visible="true" version="16" changeset="182403454" timestamp="2026-05-08T22:45:42Z" user="ivanruiz" uid="23829548">
+  <member type="relation" ref="10402753" role="subarea"/>
+  <member type="relation" ref="10402824" role="subarea"/>
+  <member type="way" ref="267003772" role="outer"/>
+  <member type="way" ref="267003773" role="outer"/>
+  <member type="way" ref="1232057637" role="outer"/>
+  <member type="way" ref="83097389" role="outer"/>
+  <member type="way" ref="1110154733" role="outer"/>
+  <member type="way" ref="1110154734" role="outer"/>
+  <member type="way" ref="83097166" role="outer"/>
+  <member type="way" ref="1232057645" role="outer"/>
+  <member type="way" ref="1370385363" role="outer"/>
+  <member type="way" ref="1370385361" role="outer"/>
+  <member type="way" ref="520508389" role="outer"/>
+  <member type="way" ref="863912661" role="outer"/>
+  <member type="way" ref="80789107" role="outer"/>
+  <member type="way" ref="1305331018" role="outer"/>
+  <member type="way" ref="1305331019" role="outer"/>
+  <member type="way" ref="80789111" role="outer"/>
+  <member type="way" ref="560543742" role="outer"/>
+  <member type="way" ref="560543741" role="outer"/>
+  <member type="way" ref="198489316" role="outer"/>
+  <member type="way" ref="182006728" role="outer"/>
+  <member type="way" ref="772689013" role="outer"/>
+  <member type="way" ref="550655509" role="outer"/>
+  <member type="way" ref="1383663490" role="outer"/>
+  <member type="way" ref="550655508" role="outer"/>
+  <member type="way" ref="1383663485" role="outer"/>
+  <member type="way" ref="1383663486" role="outer"/>
+  <member type="way" ref="1383663489" role="outer"/>
+  <member type="way" ref="1383663487" role="outer"/>
+  <member type="way" ref="1383665706" role="outer"/>
+  <member type="way" ref="1383663479" role="outer"/>
+  <member type="way" ref="1383665704" role="outer"/>
+  <member type="way" ref="1383665710" role="outer"/>
+  <member type="way" ref="1383665708" role="outer"/>
+  <member type="way" ref="754815077" role="outer"/>
+  <member type="way" ref="294049042" role="outer"/>
+  <member type="way" ref="294049046" role="outer"/>
+  <tag k="admin_level" v="9"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Districte IV"/>
+  <tag k="name:ca" v="Districte IV"/>
+  <tag k="place" v="borough"/>
+  <tag k="ref" v="4"/>
+  <tag k="source" v="https://geoportal.l-h.cat"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="10401792" visible="true" version="18" changeset="182403454" timestamp="2026-05-08T22:45:42Z" user="ivanruiz" uid="23829548">
+  <member type="relation" ref="10402904" role="subarea"/>
+  <member type="relation" ref="10402859" role="subarea"/>
+  <member type="way" ref="1383663489" role="outer"/>
+  <member type="way" ref="1383663486" role="outer"/>
+  <member type="way" ref="1383663484" role="outer"/>
+  <member type="way" ref="1383663483" role="outer"/>
+  <member type="way" ref="45371371" role="outer"/>
+  <member type="way" ref="45319704" role="outer"/>
+  <member type="way" ref="754815373" role="outer"/>
+  <member type="way" ref="754815372" role="outer"/>
+  <member type="way" ref="1429854200" role="outer"/>
+  <member type="way" ref="569040507" role="outer"/>
+  <member type="way" ref="402688964" role="outer"/>
+  <member type="way" ref="1314873123" role="outer"/>
+  <member type="way" ref="1025498902" role="outer"/>
+  <member type="way" ref="39094846" role="outer"/>
+  <member type="way" ref="771993441" role="outer"/>
+  <member type="way" ref="771993440" role="outer"/>
+  <member type="way" ref="1383665709" role="outer"/>
+  <member type="way" ref="1383665710" role="outer"/>
+  <member type="way" ref="1383665704" role="outer"/>
+  <member type="way" ref="1383663479" role="outer"/>
+  <member type="way" ref="1383665706" role="outer"/>
+  <member type="way" ref="1383663487" role="outer"/>
+  <tag k="admin_level" v="9"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Districte V"/>
+  <tag k="name:ca" v="Districte V"/>
+  <tag k="place" v="borough"/>
+  <tag k="ref" v="5"/>
+  <tag k="source" v="https://geoportal.l-h.cat"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="10402940" visible="true" version="25" changeset="188966634" timestamp="2026-09-13T15:13:23Z" user="mapper_72214" uid="7458957">
+  <member type="relation" ref="10402964" role="subarea"/>
+  <member type="relation" ref="10401822" role="subarea"/>
+  <member type="way" ref="45371370" role="outer"/>
+  <member type="way" ref="625783999" role="outer"/>
+  <member type="way" ref="838264223" role="outer"/>
+  <member type="way" ref="386870000" role="outer"/>
+  <member type="way" ref="754810028" role="outer"/>
+  <member type="way" ref="1025345945" role="outer"/>
+  <member type="way" ref="1363008447" role="outer"/>
+  <member type="way" ref="308115392" role="outer"/>
+  <member type="way" ref="308115390" role="outer"/>
+  <member type="way" ref="83069475" role="outer"/>
+  <member type="way" ref="560543767" role="outer"/>
+  <member type="way" ref="754817696" role="outer"/>
+  <member type="way" ref="44650418" role="outer"/>
+  <member type="way" ref="80394350" role="outer"/>
+  <member type="way" ref="23792473" role="outer"/>
+  <member type="way" ref="945966263" role="outer"/>
+  <member type="way" ref="754817695" role="outer"/>
+  <member type="way" ref="4787715" role="outer"/>
+  <member type="way" ref="1341647349" role="outer"/>
+  <member type="way" ref="1341647353" role="outer"/>
+  <member type="way" ref="284305475" role="outer"/>
+  <member type="way" ref="754817403" role="outer"/>
+  <member type="way" ref="1341653151" role="outer"/>
+  <member type="way" ref="79685486" role="outer"/>
+  <member type="way" ref="1076594380" role="outer"/>
+  <member type="way" ref="1355211332" role="outer"/>
+  <member type="way" ref="1076160360" role="outer"/>
+  <member type="way" ref="1355211333" role="outer"/>
+  <member type="way" ref="1076416259" role="outer"/>
+  <member type="way" ref="83210485" role="outer"/>
+  <member type="way" ref="560548098" role="outer"/>
+  <member type="way" ref="83210483" role="outer"/>
+  <member type="way" ref="79685483" role="outer"/>
+  <member type="way" ref="552622373" role="outer"/>
+  <member type="way" ref="1558556846" role="outer"/>
+  <member type="way" ref="552622128" role="outer"/>
+  <member type="way" ref="540228119" role="outer"/>
+  <member type="way" ref="551081815" role="outer"/>
+  <member type="way" ref="76354527" role="outer"/>
+  <member type="way" ref="569042353" role="outer"/>
+  <member type="way" ref="243889930" role="outer"/>
+  <member type="way" ref="569048955" role="outer"/>
+  <member type="way" ref="243889927" role="outer"/>
+  <member type="way" ref="243890836" role="outer"/>
+  <member type="way" ref="1021983913" role="outer"/>
+  <member type="way" ref="1355209593" role="outer"/>
+  <member type="way" ref="754810564" role="outer"/>
+  <member type="way" ref="754810565" role="outer"/>
+  <tag k="admin_level" v="9"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Districte VI"/>
+  <tag k="name:ca" v="Districte VI"/>
+  <tag k="place" v="borough"/>
+  <tag k="ref" v="6"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q93392774"/>
+  <tag k="wikipedia" v="ca:Districte VI (l'Hospitalet de Llobregat)"/>
+ </relation>
+</osm>

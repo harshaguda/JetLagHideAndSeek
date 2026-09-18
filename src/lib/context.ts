@@ -3,6 +3,11 @@ import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import type { Map } from "leaflet";
 import { atom, computed } from "nanostores";
 
+import {
+    CITY_PRESETS,
+    type CityPresetKey,
+    cityPresetLocations,
+} from "@/lib/cityPresets";
 import type {
     AdditionalMapGeoLocations,
     CustomStation,
@@ -17,26 +22,18 @@ import {
     type Units,
 } from "@/maps/schema";
 
+export const selectedCity = persistentAtom<CityPresetKey>(
+    "selectedCity",
+    "helsinki",
+    {
+        encode: JSON.stringify,
+        decode: JSON.parse,
+    },
+);
+
 export const mapGeoLocation = persistentAtom<OpenStreetMap>(
     "mapGeoLocation",
-    {
-        geometry: {
-            coordinates: [60.1699, 24.9384],
-            type: "Point",
-        },
-        type: "Feature",
-        properties: {
-            osm_type: "R",
-            osm_id: 34914,
-            extent: [60.297, 24.739, 59.922, 25.254],
-            country: "Finland",
-            osm_key: "place",
-            countrycode: "FI",
-            osm_value: "city",
-            name: "Helsinki",
-            type: "city",
-        },
-    },
+    CITY_PRESETS.helsinki.base,
     {
         encode: JSON.stringify,
         decode: JSON.parse,
@@ -45,92 +42,17 @@ export const mapGeoLocation = persistentAtom<OpenStreetMap>(
 
 export const additionalMapGeoLocations = persistentAtom<
     AdditionalMapGeoLocations[]
->(
-    "additionalMapGeoLocations",
-    [
-        {
-            added: true,
-            base: false,
-            location: {
-                geometry: {
-                    coordinates: [60.2055, 24.6559], // Espoo coordinates
-                    type: "Point",
-                },
-                type: "Feature",
-                properties: {
-                    osm_type: "R",
-                    osm_id: 36097,
-                    extent: [60.354, 24.536, 60.100, 24.845],
-                    country: "Finland",
-                    osm_key: "place",
-                    countrycode: "FI",
-                    osm_value: "city",
-                    state: "Uusimaa",
-                    name: "Espoo",
-                    type: "city",
-                },
-            },
-        },
-        {
-            added: true,
-            base: false,
-            location: {
-                geometry: {
-                    coordinates: [60.2934, 25.0378], // Vantaa coordinates
-                    type: "Point",
-                },
-                type: "Feature",
-                properties: {
-                    osm_type: "R",
-                    osm_id: 34920,
-                    extent: [60.366, 24.747, 60.233, 25.158],
-                    country: "Finland",
-                    osm_key: "place",
-                    countrycode: "FI",
-                    osm_value: "city",
-                    state: "Uusimaa",
-                    name: "Vantaa",
-                    type: "city",
-                },
-            },
-        },
-        {
-            added: true,
-            base: false,
-            location: {
-                geometry: {
-                    coordinates: [60.2111209, 24.7293466], // Kauniainen coordinates
-                    type: "Point",
-                },
-                type: "Feature",
-                properties: {
-                    osm_type: "R",
-                    osm_id: 37224,
-                    extent: [60.225918, 24.6752776, 60.2025488, 24.7509167],
-                    country: "Finland",
-                    osm_key: "place",
-                    countrycode: "FI",
-                    osm_value: "city",
-                    state: "Uusimaa",
-                    name: "Kauniainen",
-                    type: "city",
-                },
-            },
-        }
-
-    ],
-    {
-        encode: JSON.stringify,
-        decode: (val) => {
-            const parsed = JSON.parse(val);
-            if (!Array.isArray(parsed)) return [];
-            return parsed.map((item: any) => {
-                if (item && item.location) return item;
-                return { added: true, base: false, location: item };
-            });
-        },
-    }
-);
+>("additionalMapGeoLocations", cityPresetLocations("helsinki"), {
+    encode: JSON.stringify,
+    decode: (val) => {
+        const parsed = JSON.parse(val);
+        if (!Array.isArray(parsed)) return [];
+        return parsed.map((item: any) => {
+            if (item && item.location) return item;
+            return { added: true, base: false, location: item };
+        });
+    },
+});
 
 export const mapGeoJSON = atom<FeatureCollection<
     Polygon | MultiPolygon
@@ -171,9 +93,9 @@ export const highlightTrainLines = persistentAtom<boolean>(
 export const hiderMode = persistentAtom<
     | false
     | {
-        latitude: number;
-        longitude: number;
-    }
+          latitude: number;
+          longitude: number;
+      }
 >("isHiderMode", false, {
     encode: JSON.stringify,
     decode: JSON.parse,
@@ -311,7 +233,7 @@ export const saveCustomPreset = (
 ) => {
     const id =
         typeof crypto !== "undefined" &&
-            typeof (crypto as any).randomUUID === "function"
+        typeof (crypto as any).randomUUID === "function"
             ? (crypto as any).randomUUID()
             : String(Date.now());
     const p: CustomPreset = {
@@ -453,3 +375,20 @@ export const customInitPreference = persistentAtom<"ask" | "blank" | "prefill">(
         decode: JSON.parse,
     },
 );
+
+/**
+ * Swap the hiding zone over to another preset city. This replaces the base and
+ * additional locations wholesale, so any questions placed in the previous city
+ * are cleared -- they would otherwise be masked against a boundary on the other
+ * side of the continent.
+ */
+export const applyCityPreset = (city: CityPresetKey) => {
+    selectedCity.set(city);
+    mapGeoLocation.set(CITY_PRESETS[city].base);
+    additionalMapGeoLocations.set(cityPresetLocations(city));
+    qgis2webDataset.set(city);
+
+    mapGeoJSON.set(null);
+    polyGeoJSON.set(null);
+    questions.set([]);
+};
