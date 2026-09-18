@@ -331,6 +331,9 @@ const baseMeasuringQuestionSchema = ordinaryBaseQuestionSchema.extend({
 const ordinaryMeasuringQuestionSchema = baseMeasuringQuestionSchema.extend({
     type: z
         .union([
+            // See the matching schema above: a freshly added question queries
+            // nothing until a type is picked. Kept out of the dropdown.
+            z.literal(UNSET_QUESTION_TYPE).describe("Not selected"),
             z.literal("coastline").describe("Coastline Question"),
             z
                 .literal("airport")
@@ -370,7 +373,7 @@ const ordinaryMeasuringQuestionSchema = baseMeasuringQuestionSchema.extend({
                 .literal("park-full")
                 .describe("Park Question (Small+Medium Games)"),
         ])
-        .default("coastline"),
+        .default(UNSET_QUESTION_TYPE),
 });
 
 const hidingZoneMeasuringQuestionsSchema = baseMeasuringQuestionSchema.extend({

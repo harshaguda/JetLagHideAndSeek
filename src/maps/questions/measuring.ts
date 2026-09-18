@@ -32,6 +32,7 @@ import type {
     HomeGameMeasuringQuestions,
     MeasuringQuestion,
 } from "@/maps/schema";
+import { UNSET_QUESTION_TYPE } from "@/maps/schema";
 
 const highSpeedBase = _.memoize(
     (features: Feature[]) => {
@@ -85,6 +86,11 @@ const bboxExtension = (
 export const determineMeasuringBoundary = async (
     question: MeasuringQuestion,
 ) => {
+    // Bail before touching the map data: an unchosen question should reach
+    // nothing at all, and mapGeoJSON is legitimately null before the first
+    // boundary load.
+    if (question.type === UNSET_QUESTION_TYPE) return false;
+
     const bBox = turf.bbox(mapGeoJSON.get()!);
 
     switch (question.type) {
@@ -310,6 +316,10 @@ export const adjustPerMeasuring = async (
 export const hiderifyMeasuring = async (question: MeasuringQuestion) => {
     const $hiderMode = hiderMode.get();
     if ($hiderMode === false) {
+        return question;
+    }
+
+    if (question.type === UNSET_QUESTION_TYPE) {
         return question;
     }
 

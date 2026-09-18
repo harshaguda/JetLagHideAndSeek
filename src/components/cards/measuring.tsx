@@ -29,6 +29,7 @@ import {
     type MeasuringQuestion,
     measuringQuestionSchema,
     NO_GROUP,
+    UNSET_QUESTION_TYPE,
 } from "@/maps/schema";
 
 import { QuestionCard } from "./base";
@@ -175,7 +176,8 @@ export const MeasuringQuestionComponent = ({
                             .flatMap((x) =>
                                 determineUnionizedStrings(x.shape.type),
                             )
-                            .map((x) => [(x._def as any).value, x.description]),
+                            .map((x) => [(x._def as any).value, x.description])
+                            .filter(([value]) => value !== UNSET_QUESTION_TYPE),
                     )}
                     groups={measuringQuestionSchema.options
                         .filter((x) => x.description !== NO_GROUP)

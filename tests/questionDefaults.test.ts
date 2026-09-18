@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 
 import { determineMatchingBoundary } from "@/maps/questions/matching";
+import { determineMeasuringBoundary } from "@/maps/questions/measuring";
 import {
     matchingQuestionSchema,
+    measuringQuestionSchema,
     questionSchema,
     UNSET_QUESTION_TYPE,
 } from "@/maps/schema";
@@ -38,6 +40,38 @@ describe("a newly added matching question", () => {
         });
 
         expect(parsed.type).toBe("airport");
+    });
+});
+
+describe("a newly added measuring question", () => {
+    it("has no type chosen yet, rather than defaulting to coastline", () => {
+        const parsed = questionSchema.parse({
+            id: "measuring",
+            data: { lat: 41.3874, lng: 2.1686 },
+        });
+
+        expect(parsed.data.type).toBe(UNSET_QUESTION_TYPE);
+    });
+
+    it("measures nothing until a type is chosen", async () => {
+        const parsed = questionSchema.parse({
+            id: "measuring",
+            data: { lat: 41.3874, lng: 2.1686 },
+        });
+
+        await expect(
+            determineMeasuringBoundary(parsed.data as any),
+        ).resolves.toBe(false);
+    });
+
+    it("still accepts a real type once chosen", () => {
+        const parsed = measuringQuestionSchema.parse({
+            lat: 41.3874,
+            lng: 2.1686,
+            type: "coastline",
+        });
+
+        expect(parsed.type).toBe("coastline");
     });
 });
 
