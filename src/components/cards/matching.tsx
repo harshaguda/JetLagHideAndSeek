@@ -33,6 +33,7 @@ import {
     type MatchingQuestion,
     matchingQuestionSchema,
     NO_GROUP,
+    UNSET_QUESTION_TYPE,
 } from "@/maps/schema";
 
 import { QuestionCard } from "./base";
@@ -289,7 +290,8 @@ export const MatchingQuestionComponent = ({
                             .flatMap((x) =>
                                 determineUnionizedStrings(x.shape.type),
                             )
-                            .map((x) => [(x._def as any).value, x.description]),
+                            .map((x) => [(x._def as any).value, x.description])
+                            .filter(([value]) => value !== UNSET_QUESTION_TYPE),
                     )}
                     groups={matchingQuestionSchema.options
                         .filter((x) => x.description !== NO_GROUP)

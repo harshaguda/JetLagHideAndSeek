@@ -6,6 +6,13 @@ import { ICON_COLORS } from "./api/constants";
 
 export const NO_GROUP = "NO_GROUP";
 
+/**
+ * The type a question carries before the user has chosen one. Questions with
+ * this type are inert: they render their marker but resolve to no boundary, so
+ * no API call is made until a real type is selected.
+ */
+export const UNSET_QUESTION_TYPE = "unset";
+
 export const determineUnionizedStrings = (
     obj: z.ZodUnion<any> | z.ZodLiteral<any> | z.ZodDefault<any>,
 ): z.ZodLiteral<any>[] => {
@@ -206,6 +213,11 @@ const baseMatchingQuestionSchema = ordinaryBaseQuestionSchema.extend({
 const ordinaryMatchingQuestionSchema = baseMatchingQuestionSchema.extend({
     type: z
         .union([
+            // The default for a freshly added question. Nothing is queried
+            // until a real type is picked, so dropping a question on the map
+            // never fires an Overpass request on its own. Deliberately left
+            // out of the type dropdown; see UNSET_QUESTION_TYPE.
+            z.literal(UNSET_QUESTION_TYPE).describe("Not selected"),
             z
                 .literal("airport")
                 .describe("Commercial Airport In Zone Question"),
@@ -241,7 +253,7 @@ const ordinaryMatchingQuestionSchema = baseMatchingQuestionSchema.extend({
                 .literal("park-full")
                 .describe("Park Question (Small+Medium Games)"),
         ])
-        .default("airport"),
+        .default(UNSET_QUESTION_TYPE),
 });
 
 const zoneMatchingQuestionsSchema = baseMatchingQuestionSchema.extend({

@@ -31,8 +31,11 @@ import type {
     HomeGameMatchingQuestions,
     MatchingQuestion,
 } from "@/maps/schema";
+import { UNSET_QUESTION_TYPE } from "@/maps/schema";
 
 export const findMatchingPlaces = async (question: MatchingQuestion) => {
+    if (question.type === UNSET_QUESTION_TYPE) return [];
+
     switch (question.type) {
         case "airport": {
             return _.uniqBy(
@@ -45,7 +48,10 @@ export const findMatchingPlaces = async (question: MatchingQuestion) => {
                 (feature: any) => feature.tags.iata,
             ).map((x) =>
                 turf.point(
-                    [x.center ? x.center.lon : x.lon, x.center ? x.center.lat : x.lat],
+                    [
+                        x.center ? x.center.lon : x.lon,
+                        x.center ? x.center.lat : x.lat,
+                    ],
                     {
                         iata: x.tags?.iata,
                         name: x.tags?.["name:en"] || x.tags?.name,
@@ -61,7 +67,10 @@ export const findMatchingPlaces = async (question: MatchingQuestion) => {
                 )
             ).elements.map((x: any) =>
                 turf.point(
-                    [x.center ? x.center.lon : x.lon, x.center ? x.center.lat : x.lat],
+                    [
+                        x.center ? x.center.lon : x.lon,
+                        x.center ? x.center.lat : x.lat,
+                    ],
                     {
                         name: x.tags?.["name:en"] || x.tags?.name,
                         population: x.tags?.population,
@@ -115,7 +124,10 @@ export const findMatchingPlaces = async (question: MatchingQuestion) => {
 
             return data.elements.map((x: any) =>
                 turf.point(
-                    [x.center ? x.center.lon : x.lon, x.center ? x.center.lat : x.lat],
+                    [
+                        x.center ? x.center.lon : x.lon,
+                        x.center ? x.center.lat : x.lat,
+                    ],
                     {
                         name: x.tags?.["name:en"] || x.tags?.name,
                         osmType: x.type,
@@ -132,6 +144,7 @@ export const determineMatchingBoundary = _.memoize(
         let boundary;
 
         switch (question.type) {
+            case UNSET_QUESTION_TYPE:
             case "aquarium":
             case "zoo":
             case "theme_park":
@@ -282,6 +295,10 @@ export const adjustPerMatching = async (
 export const hiderifyMatching = async (question: MatchingQuestion) => {
     const $hiderMode = hiderMode.get();
     if ($hiderMode === false) {
+        return question;
+    }
+
+    if (question.type === UNSET_QUESTION_TYPE) {
         return question;
     }
 
