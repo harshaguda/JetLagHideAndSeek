@@ -1,0 +1,23 @@
+---
+import MapView from "@/components/MapView.astro";
+import { CITY_PRESETS } from "@/lib/cityPresets";
+
+/**
+ * /JetLagHideAndSeek/Barcelona and /JetLagHideAndSeek/Helsinki, which load the
+ * app with that city's hiding zone already selected. Both the label casing
+ * ("Barcelona") and the lowercase key ("barcelona") are emitted, since a static
+ * host serves these paths case-sensitively.
+ */
+export function getStaticPaths() {
+    return Object.entries(CITY_PRESETS).flatMap(([key, preset]) =>
+        [...new Set([preset.label, key])].map((slug) => ({
+            params: { city: slug },
+            props: { city: key as keyof typeof CITY_PRESETS },
+        })),
+    );
+}
+
+const { city } = Astro.props;
+---
+
+<MapView city={city} />
