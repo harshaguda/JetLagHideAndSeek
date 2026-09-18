@@ -40,3 +40,42 @@ describe("a newly added matching question", () => {
         expect(parsed.type).toBe("airport");
     });
 });
+
+describe("coastline distance", () => {
+    it("is positive on land, and fine-grained where a detailed extract exists", async () => {
+        const [{ default: fs }, turf, { default: osmtogeojson }] =
+            await Promise.all([
+                import("node:fs"),
+                import("@turf/turf"),
+                import("osmtogeojson"),
+            ]);
+
+        const detailed = turf.featureCollection(
+            osmtogeojson(
+                JSON.parse(
+                    fs.readFileSync("public/coastline/barcelona.json", "utf8"),
+                ),
+            ).features.filter(
+                (feature: any) => feature.geometry?.type === "LineString",
+            ) as any,
+        );
+
+        // Barceloneta beach, essentially at the water's edge.
+        const point = turf.point([2.1935, 41.3775]);
+        const distance = Math.min(
+            ...detailed.features.map((feature: any) =>
+                turf.pointToLineDistance(point, feature, {
+                    units: "meters",
+                    method: "geodesic",
+                }),
+            ),
+        );
+
+        // Never negative: measuring against lines rather than closed landmass
+        // polygons is what keeps turf.buffer from being handed a negative.
+        expect(distance).toBeGreaterThan(0);
+
+        // The 1:50m global file claims 1040m here.
+        expect(distance).toBeLessThan(200);
+    });
+});

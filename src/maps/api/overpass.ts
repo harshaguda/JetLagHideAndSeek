@@ -132,7 +132,71 @@ out geom;
     return geo.features?.[0];
 };
 
-export const fetchCoastline = async () => {
+/**
+ * High-resolution coastline extracts in `public/coastline/`, preferred over the
+ * global 1:50m file wherever they cover the point being measured.
+ *
+ * `coastline50.geojson` carries roughly one vertex every 13km, which puts the
+ * shoreline over a kilometre out to sea in a city -- it reports 1040m of
+ * separation while you are standing on Barceloneta beach. These are OSM's own
+ * `natural=coastline` ways at around 44m spacing. The query that produces them
+ * is in `docs/overpass-queries.md`.
+ */
+export const DETAILED_COASTLINE_FILES = ["barcelona.json"];
+
+const loadDetailedCoastlines = _.memoize(async () => {
+    const loaded = await Promise.all(
+        DETAILED_COASTLINE_FILES.map(async (file) => {
+            try {
+                const base = import.meta.env.BASE_URL || "/";
+                const response = await cacheFetch(
+                    `${base.endsWith("/") ? base : `${base}/`}coastline/${file}`,
+                    undefined,
+                    CacheType.PERMANENT_CACHE,
+                );
+
+                if (!response.ok) return null;
+
+                const features = osmtogeojson(
+                    await response.json(),
+                ).features.filter(
+                    (feature: any) => feature.geometry?.type === "LineString",
+                );
+
+                if (features.length === 0) return null;
+
+                const data = turf.featureCollection(features as any);
+                return { data, bbox: turf.bbox(data) };
+            } catch (e) {
+                console.warn(`Could not load coastline file ${file}`, e);
+                return null;
+            }
+        }),
+    );
+
+    return loaded.filter((entry) => entry !== null);
+});
+
+/**
+ * Passing the point being measured lets a detailed local extract be used when
+ * one covers it; without it, or outside every extract, the global file is used.
+ */
+export const fetchCoastline = async (latitude?: number, longitude?: number) => {
+    if (latitude !== undefined && longitude !== undefined) {
+        for (const coastline of await loadDetailedCoastlines()) {
+            const [minLng, minLat, maxLng, maxLat] = coastline.bbox;
+
+            if (
+                longitude >= minLng &&
+                longitude <= maxLng &&
+                latitude >= minLat &&
+                latitude <= maxLat
+            ) {
+                return coastline.data;
+            }
+        }
+    }
+
     const response = await cacheFetch(
         import.meta.env.BASE_URL + "/coastline50.geojson",
         "Fetching coastline data...",

@@ -1,5 +1,5 @@
 import * as turf from "@turf/turf";
-import type { Feature, MultiPolygon } from "geojson";
+import type { Feature } from "geojson";
 import _ from "lodash";
 import osmtogeojson from "osmtogeojson";
 import { toast } from "react-toastify";
@@ -101,41 +101,59 @@ export const determineMeasuringBoundary = async (
             return [highSpeedBase(features)];
         }
         case "coastline": {
-            const coastline = turf.lineToPolygon(
-                await fetchCoastline(),
-            ) as Feature<MultiPolygon>;
+            const coastline = await fetchCoastline(question.lat, question.lng);
+            const point = turf.point([question.lng, question.lat]);
 
-            const distanceToCoastline = turf.pointToPolygonDistance(
-                turf.point([question.lng, question.lat]),
-                coastline,
-                {
-                    units: "miles",
-                    method: "geodesic",
-                },
+            // Measured against the coastline as lines. The previous code
+            // closed it into landmass polygons and used
+            // pointToPolygonDistance, which returns a *negative* distance for
+            // a point inside the polygon -- i.e. for every point on land. That
+            // negative then reached turf.buffer, which returned undefined, and
+            // the question died in a swallowed exception.
+            const distanceToCoastline = Math.min(
+                ...coastline.features.map((feature: Feature) =>
+                    turf.pointToLineDistance(point, feature as any, {
+                        units: "miles",
+                        method: "geodesic",
+                    }),
+                ),
             );
 
+            const searchArea = bBox
+                ? bboxExtension(bBox as any, distanceToCoastline)
+                : ([-180, -90, 180, 90] as [number, number, number, number]);
+
+            // Hand back the coastline itself, clipped to the stretch that can
+            // matter, and let arcBufferToPoint buffer it out to the question's
+            // own distance -- the same treatment every other measuring
+            // question gets. Buffering the closed landmass here instead only
+            // ever grew seawards, so the region it produced never overlapped
+            // the hiding zone and the question silently did nothing.
+            const nearbyCoastline = coastline.features
+                .map((feature: Feature) => {
+                    try {
+                        return turf.bboxClip(feature as any, searchArea);
+                    } catch {
+                        return null; // Not clippable against this window
+                    }
+                })
+                .filter(
+                    (feature: any) =>
+                        feature && feature.geometry?.coordinates?.length > 0,
+                );
+
+            if (nearbyCoastline.length === 0) return false;
+
+            // Thicken the clipped lines into a sliver polygon first, the way
+            // the high-speed rail question above does -- arcBufferToPoint is
+            // handed polygons everywhere else in this file.
             return [
-                turf.difference(
-                    turf.featureCollection([
-                        turf.bboxPolygon(bBox),
-                        turf.buffer(
-                            turf.bboxClip(
-                                coastline,
-                                bBox
-                                    ? bboxExtension(
-                                          bBox as any,
-                                          distanceToCoastline,
-                                      )
-                                    : [-180, -90, 180, 90],
-                            ),
-                            distanceToCoastline,
-                            {
-                                units: "miles",
-                                steps: 64,
-                            },
-                        )!,
-                    ]),
-                )!,
+                turf.combine(
+                    turf.buffer(
+                        turf.featureCollection(nearbyCoastline),
+                        0.001,
+                    )!,
+                ).features[0],
             ];
         }
         case "airport":
