@@ -62,26 +62,12 @@ const highSpeedBase = _.memoize(
     (features) => `${JSON.stringify(features.map((x) => x.geometry))}`,
 );
 
-const bboxExtension = (
-    bBox: [number, number, number, number],
-    distance: number,
-): [number, number, number, number] => {
-    const buffered = turf.bbox(
-        turf.buffer(turf.bboxPolygon(bBox), Math.abs(distance), {
-            units: "miles",
-        })!,
-    );
-
-    const originalDeltaLat = bBox[3] - bBox[1];
-    const originalDeltaLng = bBox[2] - bBox[0];
-
-    return [
-        buffered[0] - originalDeltaLng,
-        buffered[1] - originalDeltaLat,
-        buffered[2] + originalDeltaLng,
-        buffered[3] + originalDeltaLat,
-    ];
-};
+/**
+ * Roughly 110m at the equator, matching the generalisation the high-speed rail
+ * question uses. Coastline is never simplified more coarsely than this, however
+ * far the question's point is from the sea.
+ */
+const MAX_COASTLINE_TOLERANCE = 0.001;
 
 export const determineMeasuringBoundary = async (
     question: MeasuringQuestion,
@@ -125,8 +111,16 @@ export const determineMeasuringBoundary = async (
                 ),
             );
 
+            // Only coast within the question's own distance of the hiding
+            // zone can move the answer, so clip to exactly that. The previous
+            // window also padded by the zone's full width on every side, which
+            // roughly tripled the coastline carried through.
             const searchArea = bBox
-                ? bboxExtension(bBox as any, distanceToCoastline)
+                ? (turf.bbox(
+                      turf.buffer(turf.bboxPolygon(bBox), distanceToCoastline, {
+                          units: "miles",
+                      })!,
+                  ) as [number, number, number, number])
                 : ([-180, -90, 180, 90] as [number, number, number, number]);
 
             // Hand back the coastline itself, clipped to the stretch that can
@@ -150,16 +144,35 @@ export const determineMeasuringBoundary = async (
 
             if (nearbyCoastline.length === 0) return false;
 
-            // Thicken the clipped lines into a sliver polygon first, the way
-            // the high-speed rail question above does -- arcBufferToPoint is
-            // handed polygons everywhere else in this file.
+            // The band this becomes is `distanceToCoastline` wide, so detail
+            // finer than that cannot move its edge -- but every vertex is paid
+            // for in the geodesic buffer downstream, and OSM coastline runs to
+            // thousands of them. Generalising to a fiftieth of the distance
+            // keeps the result within a fraction of a percent of the
+            // full-detail one while cutting the vertex count by an order of
+            // magnitude.
+            const simplified = turf.simplify(
+                turf.featureCollection(nearbyCoastline as any),
+                {
+                    tolerance: Math.min(
+                        MAX_COASTLINE_TOLERANCE,
+                        turf.convertLength(
+                            distanceToCoastline,
+                            "miles",
+                            "degrees",
+                        ) / 50,
+                    ),
+                    highQuality: false,
+                },
+            );
+
+            // Thicken the lines into a sliver polygon, the way the high-speed
+            // rail question above does -- arcBufferToPoint is handed polygons
+            // everywhere else in this file. A metre-wide sliver needs no
+            // rounded corners, hence steps: 1.
             return [
-                turf.combine(
-                    turf.buffer(
-                        turf.featureCollection(nearbyCoastline),
-                        0.001,
-                    )!,
-                ).features[0],
+                turf.combine(turf.buffer(simplified, 0.001, { steps: 1 })!)
+                    .features[0],
             ];
         }
         case "airport":
